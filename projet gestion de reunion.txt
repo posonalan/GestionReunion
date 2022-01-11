@@ -1,0 +1,67 @@
+gestion de reunion
+
+
+*avant la reunion
+
+-editeur d'ordre du jour 
+-allocation des taches de preparation
+-planification de la reunion
+-planification de la date et de l'horaire de reunion
+-choix de l'orateur 
+-choix du sujet de la reunion
+-enregistrement du nombre de participants limites
+-envoi automatique des rappels de la date de reunion+-
+
+
+
+* pendant la reunion
+
+-possibilite de faire la reunion sur site ou a distance 
+-capture des notes instantanees
+-distribution des taches et compte rendu
+-outils d'aide a la decision
+-actions a entreprendre  
+-distribution des taches de reunion
+-rappel des taches automatiques
+-suivi de l'etat de progression des taches 
+-renvoi automatique de rappels
+-regroupements des taches en projets 
+-choix du sujet de la reunion
+-module de gestion des taches et consolidation des compte rendus
+-prise de note rapide et efficace 
+-allocation des taches a entreprendre 
+-module de recherche 
+-compte rendu pour reference future 
+-outil de repartition du temps entre les sujets de discussion
+-gestions de fichier et options de recherche 
+-tableau de bord
+
+
+*apres la reunion 
+
+-creation automatique de compte rendu
+-archivage et systeme de permission
+-compte rendu professionnel personnalisable
+-module d'ordre du jour 
+-rattachement de fichiers et hyperliens 
+-archivage automatique de l'ordre du jour 
+
+
+
+
+administrateur 
+utilisateur
+planification reunion
+mener reunion
+archiver reunion
+crenaux horaire reunion
+choix du sujet
+gestion des fichiers
+tableau de bord 
+ordre du jour 
+compte rendu du jour 
+tache de reunion
+messagerie
+analyse de reunion
+calendrier
+
