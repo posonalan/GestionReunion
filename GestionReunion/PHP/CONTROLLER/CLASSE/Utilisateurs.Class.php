@@ -6,15 +6,18 @@ class Utilisateurs
 	/*****************Attributs***************** */
 
 	private $_idUtilisateur;
-	private $_nom;
-	private $_prenom;
-	private $_motDePasse;
-	private $_adresseMail;
-	private $_role;
-	private $_pseudo;
+	private $_nomUtilisateur;
+	private $_prenomUtilisateur;
+	private $_emailUtilisateur;
+	private $_motDePasseUtilisateur;
+	private $_validationUtilisateur;
+	private $_idRole;
+	
 
 	/***************** Accesseurs ***************** */
 
+
+	
 
 	public function getIdUtilisateur()
 	{
@@ -23,68 +26,69 @@ class Utilisateurs
 
 	public function setIdUtilisateur($idUtilisateur)
 	{
-		$this->_idUtilisateur=$idUtilisateur;
+		$this->_idUtilisateur = $idUtilisateur;
 	}
 
-	public function getNom()
+	public function getNomUtilisateur()
 	{
-		return $this->_nom;
+		return $this->_nomUtilisateur;
 	}
 
-	public function setNom($nom)
+	public function setNomUtilisateur($nomUtilisateur)
 	{
-		$this->_nom=$nom;
+		$this->_nomUtilisateur = $nomUtilisateur;
 	}
 
-	public function getPrenom()
+	public function getPrenomUtilisateur()
 	{
-		return $this->_prenom;
+		return $this->_prenomUtilisateur;
 	}
 
-	public function setPrenom($prenom)
+	public function setPrenomUtilisateur($prenomUtilisateur)
 	{
-		$this->_prenom=$prenom;
+		$this->_prenomUtilisateur = $prenomUtilisateur;
 	}
 
-	public function getMotDePasse()
+	public function getEmailUtilisateur()
 	{
-		return $this->_motDePasse;
+		return $this->_emailUtilisateur;
 	}
 
-	public function setMotDePasse($motDePasse)
+	public function setEmailUtilisateur($emailUtilisateur)
 	{
-		$this->_motDePasse=$motDePasse;
+		$this->_emailUtilisateur = $emailUtilisateur;
 	}
 
-	public function getAdresseMail()
+	public function getMotDePasseUtilisateur()
 	{
-		return $this->_adresseMail;
+		return $this->_motDePasseUtilisateur;
 	}
 
-	public function setAdresseMail($adresseMail)
+	public function setMotDePasseUtilisateur($motDePasseUtilisateur)
 	{
-		$this->_adresseMail=$adresseMail;
+		$this->_motDePasseUtilisateur = $motDePasseUtilisateur;
 	}
 
-	public function getRole()
+	public function getValidationUtilisateur()
 	{
-		return $this->_role;
+		return $this->_validationUtilisateur;
 	}
 
-	public function setRole($role)
+	public function setValidationUtilisateur($validationUtilisateur)
 	{
-		$this->_role=$role;
+		$this->_validationUtilisateur = $validationUtilisateur;
 	}
 
-	public function getPseudo()
+	public function getIdRole()
 	{
-		return $this->_pseudo;
+		return $this->_idRole;
 	}
 
-	public function setPseudo($pseudo)
+	public function setIdRole($idRole)
 	{
-		$this->_pseudo=$pseudo;
+		$this->_idRole = $idRole;
 	}
+
 
 	/*****************Constructeur***************** */
 
@@ -116,9 +120,13 @@ class Utilisateurs
 	*/
 	public function toString()
 	{
-		return "IdUtilisateur : ".$this->getIdUtilisateur()."Nom : ".$this->getNom()."Prenom : ".$this->getPrenom()."MotDePasse : ".$this->getMotDePasse()."AdresseMail : ".$this->getAdresseMail()."Role : ".$this->getRole()."Pseudo : ".$this->getPseudo()."\n";
+		return "<div style=color:pink style=background-color:white><br>*****<br>IdUtilisateur : ".$this->getIdUtilisateur().
+		"<br> Nom : ".$this->getNomUtilisateur().
+		"<br> Prenom : ".$this->getPrenomUtilisateur().
+		"<br> Email : ".$this->getEmailUtilisateur().
+		"<br> MotDePasse : ".$this->getMotDePasseUtilisateur().
+		"<br> Validation : ".$this->getValidationUtilisateur().
+		"<br> Role : ".$this->getIdRole().
+		"<br> ***** <br></div>";
 	}
-
-
-	
 }

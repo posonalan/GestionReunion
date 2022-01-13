@@ -42,8 +42,8 @@ $routes = [
     // "listeCategorie" => ["PHP/VIEW/LISTE/", "ListeCategorie", "ListeCategories", 2, false],
     // "formCategorie" => ["PHP/VIEW/FORM/", "FormCategorie", "GestionCategories", 2, false],
     // "actionCategorie" => ["PHP/CONTROLLER/ACTION/", "ActionCategorie", "Mise à jour du produit", 2, false],
-    
-    "erreur" => ["PHP/VIEW/GENERAL/", "Erreur", "titreErreur", 0, false]
+    "TestManager" => ["PHP/MODEL/MANAGER/", "TestManager.Class", "titretest", 0, false]
+    // "erreur" => ["PHP/VIEW/GENERAL/", "Erreur", "titreErreur", 0, false]
 ];
 
 if (isset($_GET["page"])) {
@@ -58,5 +58,5 @@ if (isset($_GET["page"])) {
     }
 } else {
     //Sinon afficher la page par defaut
-    AfficherPage($routes["default"]);
+    AfficherPage($routes["TestManager"]);
 }
