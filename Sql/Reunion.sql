@@ -12,15 +12,6 @@ CREATE TABLE Roles(
 
 
 
-DROP TABLE IF EXISTS ComptesRendu;
-CREATE TABLE ComptesRendu(
-   idCompteRendu INT AUTO_INCREMENT PRIMARY KEY,
-   libelleCompteRendu VARCHAR(50),
-   contenuCompteRendu TEXT
-)ENGINE=InnoDB;
-
-
-
 DROP TABLE IF EXISTS Salles;
 CREATE TABLE Salles(
    idSalle INT AUTO_INCREMENT PRIMARY KEY,
@@ -54,10 +45,10 @@ CREATE TABLE FichiersAnnexes(
 
 
 
-DROP TABLE IF EXISTS StatutsReunions;
-CREATE TABLE StatutsReunions(
-   idStatutReunion INT AUTO_INCREMENT PRIMARY KEY,
-   libelleStatutReunion VARCHAR(50)
+DROP TABLE IF EXISTS TypesReunions;
+CREATE TABLE TypesReunions(
+   idTypeReunion INT AUTO_INCREMENT PRIMARY KEY,
+   libelleTypeReunion VARCHAR(50)
 )ENGINE=InnoDB;
 
 
@@ -72,7 +63,7 @@ CREATE TABLE Sujets(
 
 
 
-DROP TABLE IF EXISTS StatutsPresences;
+DROP TABLE IF EXISTS TypesPresences;
 CREATE TABLE StatutsPresences(
    idStatutPresence INT AUTO_INCREMENT PRIMARY KEY,
    libelleStatutPresence VARCHAR(50)
@@ -101,6 +92,7 @@ CREATE TABLE Reunions(
    horaireDebut TIME,
    horaireFin TIME,
    nbMaxParticipants INT,
+   contenuCompteRendu TEXT,
    idCreateur INT NOT NULL,
    idAnimateur INT NOT NULL,
    idSecretaire INT NOT NULL,
@@ -163,8 +155,7 @@ idGestionAnnexe INT AUTO_INCREMENT PRIMARY KEY,
    ADD CONSTRAINT FK_Reunions_Createur FOREIGN KEY(idCreateur) REFERENCES Utilisateurs(idUtilisateur),
    ADD CONSTRAINT FK_Reunions_Secretaire  FOREIGN KEY(idSecretaire) REFERENCES Utilisateurs(idUtilisateur),
    ADD CONSTRAINT FK_Reunions_Animateur  FOREIGN KEY(idAnimateur) REFERENCES Utilisateurs(idUtilisateur),
-   ADD CONSTRAINT FK_Reunions_ComptesRendu  FOREIGN KEY(idCompteRendu) REFERENCES ComptesRendu(idCompteRendu),
-   ADD CONSTRAINT FK_Reunions_StatutsReunions  FOREIGN KEY(idStatutReunion) REFERENCES StatutsReunions(idStatutReunion),
+   ADD CONSTRAINT FK_Reunions_TypesReunions  FOREIGN KEY(idTypeReunion) REFERENCES TypesReunions(idTypeReunion),
    ADD CONSTRAINT FK_Reunions_EtatsAvancements  FOREIGN KEY(idEtatAvancement) REFERENCES EtatsAvancements(idEtatAvancement),
    ADD CONSTRAINT FK_Reunions_Salles  FOREIGN KEY(idSalle) REFERENCES Salles(idSalle);
 
