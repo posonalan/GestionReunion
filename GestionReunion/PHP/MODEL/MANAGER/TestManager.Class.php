@@ -25,3 +25,30 @@
 // {
 //     echo $info->toString();
 // }
+
+//*********************************RolesManager**************************** *//
+
+//ADD RolesManager : ok
+// $m = new Roles(["libelleRole"=>"Test"]);
+// var_dump($m);
+// $D = RolesManager::add($m);
+// var_dump($D);
+
+// //Update RolesManager : ok
+// $m = RolesManager::findById(1);
+// var_dump($m);
+// $m->setLibelleRole("Utilisateur");
+// var_dump($m);
+// RolesManager::update($m);
+
+// //Delete RolesManager : ok
+// $m = RolesManager::findById(7);
+// RolesManager::delete($m);
+
+// //Get Liste RolesManager : ok
+// $tableau = RolesManager::getList();
+// foreach ($tableau as $info)
+// {
+//     echo $info->toString();
+// }
+
