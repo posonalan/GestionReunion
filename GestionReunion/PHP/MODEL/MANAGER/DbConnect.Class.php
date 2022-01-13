@@ -9,6 +9,7 @@ class DbConnect
     public static function getDb()
     {
         return DbConnect::$db;
+
     }
 
     public static function init()
@@ -16,6 +17,8 @@ class DbConnect
         try {
             // On se connecte � MySQL
            self::$db = new PDO('mysql:host=' . Parametre::getHost() . ';port=' . Parametre::getPort() . ';dbname=' . Parametre::getDbname() . ';charset=utf8', Parametre::getLogin(), Parametre::getPwd());
+        
+        // var_dump(Parametre::getPwd()); 
         }
         catch (Exception $e)
         {
