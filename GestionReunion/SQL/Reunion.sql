@@ -96,7 +96,6 @@ CREATE TABLE Reunions(
    idCreateur INT NOT NULL,
    idAnimateur INT NOT NULL,
    idSecretaire INT NOT NULL,
-   idCompteRendu INT NOT NULL,
    idTypeReunion INT NOT NULL,
    idEtatAvancement INT NOT NULL,
    idSalle INT NOT NULL
