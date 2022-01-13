@@ -47,4 +47,33 @@
 
 // //Get Liste RolesManager : ok
 // $tableau = RolesManager::getList();
+// foreach ($tableau as $info)
+// {
+//     echo $info->toString();
+// }
 
+//*********************************FichiersAnnexesManager**************************** *//
+
+//ADD FichiersAnnexesManager : ok
+// $m = new FichiersAnnexes(["titreFichierAnnexe"=>"Test","lienFichierAnnexe"=>"unLien"]);
+// var_dump($m);
+// $D = FichiersAnnexesManager::add($m);
+// var_dump($D);
+
+// //Update FichiersAnnexesManager : ok
+// $m = FichiersAnnexesManager::findById(1);
+// var_dump($m);
+// $m->setTitreFichierAnnexe("Utilisateur");
+// var_dump($m);
+// FichiersAnnexesManager::update($m);
+
+// //Delete FichiersAnnexesManager : ok
+// $m = FichiersAnnexesManager::findById(3);
+// FichiersAnnexesManager::delete($m);
+
+// //Get Liste FichiersAnnexesManager : ok
+// $tableau = FichiersAnnexesManager::getList();
+// foreach ($tableau as $info)
+// {
+//     echo $info->toString();
+// }
