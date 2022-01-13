@@ -3,7 +3,7 @@
 //*********************************UserManager**************************** *//
 
 //ADD UserManager : ok
-// $m = new Utilisateurs(["nomUtilisateur"=>"test","prenomUtilisateur"=>"Alan","emailUtilisateur"=>"alan.poson@gmail.com","motDePasseUtilisateur"=>"test","validationUtilisateur"=>true,"idRole"=>1]);
+//  $m = new Utilisateurs(["nomUtilisateur"=>"test","prenomUtilisateur"=>"Alan","emailUtilisateur"=>"alan.poson@gmail.com","motDePasseUtilisateur"=>"test","validationUtilisateur"=>true,"idRole"=>1]);
 // var_dump($m);
 // $D = UtilisateursManager::add($m);
 // var_dump($D);
@@ -47,8 +47,4 @@
 
 // //Get Liste RolesManager : ok
 // $tableau = RolesManager::getList();
-// foreach ($tableau as $info)
-// {
-//     echo $info->toString();
-// }
 
