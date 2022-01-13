@@ -97,7 +97,7 @@ CREATE TABLE Reunions(
    idAnimateur INT NOT NULL,
    idSecretaire INT NOT NULL,
    idCompteRendu INT NOT NULL,
-   idStatutReunion INT NOT NULL,
+   idTypeReunion INT NOT NULL,
    idEtatAvancement INT NOT NULL,
    idSalle INT NOT NULL
 )ENGINE=InnoDB;
