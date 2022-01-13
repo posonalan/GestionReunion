@@ -1,44 +1,44 @@
 <?php
 
-class FichiersAnnexes
+class Salles
 {
 
 	/*****************Attributs***************** */
 
-	private $_idFichierAnnexe;
-	private $_titreFichierAnnexe;
-    private $_lienFichierAnnexe;
+	private $_idSalle;
+	private $_libelleSalle;
+    private $_tailleMaxSalle;
 
 	/***************** Accesseurs ***************** */
 
-    public function getIdFichierAnnexe()
+    public function getIdSalle()
 	{
-		return $this->_idFichierAnnexe;
+		return $this->_idSalle;
 	}
 
-	public function setIdFichierAnnexe($idFichierAnnexe)
+	public function setIdSalle($idSalle)
 	{
-		$this->_idFichierAnnexe = $idFichierAnnexe;
+		$this->_idSalle = $idSalle;
 	}
 
-	public function getTitreFichierAnnexe()
+	public function getLibelleSalle()
 	{
-		return $this->_titreFichierAnnexe;
+		return $this->_libelleSalle;
 	}
 
-	public function setTitreFichierAnnexe($titreFichierAnnexe)
+	public function setLibelleSalle($libelleSalle)
 	{
-		$this->_titreFichierAnnexe = $titreFichierAnnexe;
+		$this->_libelleSalle = $libelleSalle;
 	}
 
-    public function getLienFichierAnnexe()
+    public function getTailleMaxSalle()
     {
-        return $this->_lienFichierAnnexe;
+        return $this->_tailleMaxSalle;
     }
 
-    public function setLienFichierAnnexe($lienFichierAnnexe)
+    public function setTailleMaxSalle($tailleMaxSalle)
     {
-        $this->_lienFichierAnnexe = $lienFichierAnnexe;
+        $this->_tailleMaxSalle = $tailleMaxSalle;
     }
 
 	/*****************Constructeur***************** */
@@ -72,13 +72,11 @@ class FichiersAnnexes
 	public function toString()
 	{
 		return "<div style=color:pink style=background-color:white><br>*****<br>
-        IdFichierAnnexe : ".$this->getIdFichierAnnexe().
-		"<br> Titre fichier annexe  : ".$this->getTitreFichierAnnexe().
-		"<br> lien fichier annexe : ".$this->getLienFichierAnnexe().
+        IdSalle : ".$this->getIdSalle().
+		"<br> libelle Salle : ".$this->getLibelleSalle().
+		"<br> Taille Maximal de la salle : ".$this->getTailleMaxSalle().
         "<br> ***** <br></div>";
 	}
 
 
-
-	
 }
