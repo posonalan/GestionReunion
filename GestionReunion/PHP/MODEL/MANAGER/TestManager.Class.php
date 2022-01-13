@@ -30,24 +30,24 @@
 //*********************************UserManager**************************** *//
 
 // ADD UserManager : ok
- $m = new Taches(["libelleTache"=>"test","dateEcheanceTache"=>2009-12-20,"idEtatAvancement"=>1,"idUtilisateur"=>1,"idPrioriteTache"=>1]);
+ $m = new Sujets(["libelleSujet"=>"test","tempsAlloue"=>'00:20:00',"idOrateur"=>2]);
 var_dump($m);
-$D = TachesManager::add($m);
+$D = SujetsManager::add($m);
 var_dump($D);
 
 // //Update UserManager : ok
-// $m = UtilisateursManager::findById(18);
+// $m = TachesManager::findById(1);
 // var_dump($m);
-// $m->setNomUtilisateur("pierrik");
+// $m->setLibelleTache("pierrik");
 // var_dump($m);
-// UtilisateursManager::update($m);
+// TachesManager::update($m);
 
 // //Delete UserManager : ok
-// $m = UtilisateursManager::findById(20);
-// UtilisateursManager::delete($m);
+// $m = TachesManager::findById(1);
+// TachesManager::delete($m);
 
 // //Get Liste UserManager : ok
-// $tableau = UtilisateursManager::getList();
+// $tableau = TachesManager::getList();
 // foreach ($tableau as $info)
 // {
 //     echo $info->toString();
