@@ -92,11 +92,39 @@
 //     echo $info->toString();
 // }
 
-//*********************************RolesManager**************************** *//
-// ADD UserManager : ok
-// $m = new Sujets(["libelleSujet"=>"test","tempsAlloue"=>'00:20:00',"idOrateur"=>2]);
+//*********************************SallesManager**************************** *//
+
+//ADD SallesManager : ok
+// $m = new Salles(["libelleSalle"=>"bleu","tailleMaxSalle"=>15]);
 // var_dump($m);
-// $D = SujetsManager::add($m);
+// $D = SallesManager::add($m);
+// var_dump($D);
+
+// //Update SallesManager : ok
+// $m = SallesManager::findById(1);
+// var_dump($m);
+// $m->setLibelleSalle("Cuisine");
+// var_dump($m);
+// SallesManager::update($m);
+
+// //Delete SallesManager : ok
+// $m = SallesManager::findById(2);
+// SallesManager::delete($m);
+
+// //Get Liste SallesManager : ok
+// $tableau = SallesManager::getList();
+// foreach ($tableau as $info)
+// {
+//     echo $info->toString();
+// }
+
+//*********************************TypesRunionsManager**************************** *//
+
+
+//ADD TypesReunionsManager : ok
+// $m = new TypesReunions(["libelleTypeReunion"=>"bleu"]);
+// var_dump($m);
+// $D = TypesReunionsManager::add($m);
 // var_dump($D);
 
 // //Update FichiersAnnexesManager : ok
@@ -220,4 +248,20 @@
 //     echo $info->toString();
 
 // // }
+// //Update TypesReunionsManager : ok
+// $m = TypesReunionsManager::findById(1);
+// var_dump($m);
+// $m->setLibelleTypeReunion("Cuisine");
+// var_dump($m);
+// TypesReunionsManager::update($m);
+
+// //Delete TypesReunionsManager : ok
+// $m = TypesReunionsManager::findById(2);
+// TypesReunionsManager::delete($m);
+
+// //Get Liste TypesReunionsManager : ok
+// $tableau = TypesReunionsManager::getList();
+// foreach ($tableau as $info)
+// {
+//     echo $info->toString();
 // }
