@@ -26,14 +26,14 @@
 //     echo $info->toString();
 // }
 
+//*********************************RolesManager**************************** *//
 
-//*********************************UserManager**************************** *//
+//ADD RolesManager : ok
+// $m = new Roles(["libelleRole"=>"Test"]);
+// var_dump($m);
+// $D = RolesManager::add($m);
+// var_dump($D);
 
-// ADD UserManager : ok
- $m = new Sujets(["libelleSujet"=>"test","tempsAlloue"=>'00:20:00',"idOrateur"=>2]);
-var_dump($m);
-$D = SujetsManager::add($m);
-var_dump($D);
 
 // //Update UserManager : ok
 // $m = TachesManager::findById(1);
@@ -48,7 +48,53 @@ var_dump($D);
 
 // //Get Liste UserManager : ok
 // $tableau = TachesManager::getList();
+// //Update RolesManager : ok
+// $m = RolesManager::findById(1);
+// var_dump($m);
+// $m->setLibelleRole("Utilisateur");
+// var_dump($m);
+// RolesManager::update($m);
+
+// //Delete RolesManager : ok
+// $m = RolesManager::findById(7);
+// RolesManager::delete($m);
+
+// //Get Liste RolesManager : ok
+// $tableau = RolesManager::getList();
 // foreach ($tableau as $info)
 // {
 //     echo $info->toString();
 // }
+
+//*********************************FichiersAnnexesManager**************************** *//
+
+//ADD FichiersAnnexesManager : ok
+// $m = new FichiersAnnexes(["titreFichierAnnexe"=>"Test","lienFichierAnnexe"=>"unLien"]);
+// var_dump($m);
+// $D = FichiersAnnexesManager::add($m);
+// var_dump($D);
+
+// //Update FichiersAnnexesManager : ok
+// $m = FichiersAnnexesManager::findById(1);
+// var_dump($m);
+// $m->setTitreFichierAnnexe("Utilisateur");
+// var_dump($m);
+// FichiersAnnexesManager::update($m);
+
+// //Delete FichiersAnnexesManager : ok
+// $m = FichiersAnnexesManager::findById(3);
+// FichiersAnnexesManager::delete($m);
+
+// //Get Liste FichiersAnnexesManager : ok
+// $tableau = FichiersAnnexesManager::getList();
+// foreach ($tableau as $info)
+// {
+//     echo $info->toString();
+// }
+
+//*********************************RolesManager**************************** *//
+// ADD UserManager : ok
+// $m = new Sujets(["libelleSujet"=>"test","tempsAlloue"=>'00:20:00',"idOrateur"=>2]);
+// var_dump($m);
+// $D = SujetsManager::add($m);
+// var_dump($D);
