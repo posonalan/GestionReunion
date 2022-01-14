@@ -34,6 +34,20 @@
 // $D = RolesManager::add($m);
 // var_dump($D);
 
+
+// //Update UserManager : ok
+// $m = TachesManager::findById(1);
+// var_dump($m);
+// $m->setLibelleTache("pierrik");
+// var_dump($m);
+// TachesManager::update($m);
+
+// //Delete UserManager : ok
+// $m = TachesManager::findById(1);
+// TachesManager::delete($m);
+
+// //Get Liste UserManager : ok
+// $tableau = TachesManager::getList();
 // //Update RolesManager : ok
 // $m = RolesManager::findById(1);
 // var_dump($m);
@@ -103,3 +117,9 @@
 // {
 //     echo $info->toString();
 // }
+//*********************************RolesManager**************************** *//
+// ADD UserManager : ok
+// $m = new Sujets(["libelleSujet"=>"test","tempsAlloue"=>'00:20:00',"idOrateur"=>2]);
+// var_dump($m);
+// $D = SujetsManager::add($m);
+// var_dump($D);
