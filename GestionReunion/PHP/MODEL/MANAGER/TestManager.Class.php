@@ -117,9 +117,30 @@
 // {
 //     echo $info->toString();
 // }
-//*********************************RolesManager**************************** *//
-// ADD UserManager : ok
-// $m = new Sujets(["libelleSujet"=>"test","tempsAlloue"=>'00:20:00',"idOrateur"=>2]);
+
+//*********************************TypesRunionsManager**************************** *//
+
+
+//ADD TypesReunionsManager : ok
+// $m = new TypesReunions(["libelleTypeReunion"=>"bleu"]);
 // var_dump($m);
-// $D = SujetsManager::add($m);
+// $D = TypesReunionsManager::add($m);
 // var_dump($D);
+
+// //Update TypesReunionsManager : ok
+// $m = TypesReunionsManager::findById(1);
+// var_dump($m);
+// $m->setLibelleTypeReunion("Cuisine");
+// var_dump($m);
+// TypesReunionsManager::update($m);
+
+// //Delete TypesReunionsManager : ok
+// $m = TypesReunionsManager::findById(2);
+// TypesReunionsManager::delete($m);
+
+// //Get Liste TypesReunionsManager : ok
+// $tableau = TypesReunionsManager::getList();
+// foreach ($tableau as $info)
+// {
+//     echo $info->toString();
+// }
