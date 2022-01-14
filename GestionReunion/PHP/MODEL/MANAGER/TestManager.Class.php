@@ -77,3 +77,29 @@
 // {
 //     echo $info->toString();
 // }
+
+//*********************************SallesManager**************************** *//
+
+//ADD SallesManager : ok
+// $m = new Salles(["libelleSalle"=>"bleu","tailleMaxSalle"=>15]);
+// var_dump($m);
+// $D = SallesManager::add($m);
+// var_dump($D);
+
+// //Update SallesManager : ok
+// $m = SallesManager::findById(1);
+// var_dump($m);
+// $m->setLibelleSalle("Cuisine");
+// var_dump($m);
+// SallesManager::update($m);
+
+// //Delete SallesManager : ok
+// $m = SallesManager::findById(2);
+// SallesManager::delete($m);
+
+// //Get Liste SallesManager : ok
+// $tableau = SallesManager::getList();
+// foreach ($tableau as $info)
+// {
+//     echo $info->toString();
+// }
