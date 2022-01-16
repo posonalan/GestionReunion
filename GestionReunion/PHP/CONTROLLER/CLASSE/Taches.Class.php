@@ -96,4 +96,23 @@ class Taches
 			}
 		}
 	}
+	/*****************Autres Méthodes***************** */
+
+	/**
+	* Transforme l'objet en chaine de caractères
+	*
+	* @return String
+	*/
+	public function toString()
+	{
+		return "<div style=color:pink style=background-color:white><br>*****<br>
+		IdTache : ".$this->getIdTache().
+		"<br> LibelleTache : ".$this->getLibelleTache().
+		"<br> dateEcheanceTache: ".$this->getDateEcheanceTache().
+		"<br> idEtatAvancement : ".$this->getIdEtatAvancement().
+		"<br> idUtilisateur : ".$this->getIdUtilisateur().
+		"<br> idPrioriteTache : ".$this->getIdPrioriteTache().
+		
+		"<br> ***** <br></div>";
+	}
 }
