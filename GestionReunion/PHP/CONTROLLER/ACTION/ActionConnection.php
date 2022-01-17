@@ -1,8 +1,8 @@
 <?php
-$uti = UtilisateursManager::findByPseudo($_POST['pseudo']);
+$uti = UtilisateursManager::findByPrenom($_POST['prenom']);
 if ($uti != false) {
-    echo "motBDD " . $uti->getMotDePasse() . "  saisi" . $_POST['motDePasse'] . "crypte   " . crypte($_POST['motDePasse']) . "<br>";
-    if (crypte($_POST['motDePasse']) == $uti->getMotDePasse()) {
+    echo "motBDD " . $uti->getMotDePasseUtlisateur() . "  saisi" . $_POST['motDePasseUtilisateur'] . "crypte   " . crypte($_POST['motDePasseUtilisateur']) . "<br>";
+    if (crypte($_POST['motDePasse']) == $uti->getMotDePasseUtilisateur()) {
         echo 'connection reussie';
         $_SESSION['utilisateur'] = $uti;
         header("location:index.php?page=accueil");

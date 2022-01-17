@@ -25,7 +25,7 @@ else{
 echo '  <input type="hidden" name="idSalle" value="' . $categ->getIdSalle() . '">';
 echo '  <label>'. texte('Libelle').' :</label>
         <input type="text" name="libelleSalle" value="' . $categ->getLibelleSalle() . '"' .$disabled.'>';
-        echo '  <label>'. texte('tailleMaxSalle').' :</label>
+        echo '  <label>'. texte('TailleMaxSalle').' :</label>
         <input type="text" name="tailleMaxSalle" value="' . $categ->getTailleMaxSalle() . '"' .$disabled.'>';
     if ($defaultMode != 'Editer')
 echo '<input type="submit" value="'.$modeTraduit.'" class=" crudBtn crudBtn'.$defaultMode.'"/>';
