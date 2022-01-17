@@ -28,7 +28,7 @@ setcookie("lang", $_SESSION['lang'], time()+36000, '/');
 $routes = [
     
     // "default"=>["PHP/MODEL/","TestManager","Test de reunions",0,false],
-    "default" => ["PHP/VIEW/LISTE/", "ListeSalle", "ListeSalle", 0, false],
+    "default" => ["PHP/VIEW/LISTE/", "Formsalle", "GestionSalle", 0, false],
     
     // "inscription" => ["PHP/VIEW/FORM/", "FormInscription", "Identification", 0, false],
     // "actionInscription" => ["PHP/CONTROLLER/ACTION/", "actionInscription", "Erreur", 0, false],
@@ -47,9 +47,9 @@ $routes = [
     //"TestManager" => ["PHP/MODEL/MANAGER/", "TestManager.Class", "titretest", 0, false]
     // "erreur" => ["PHP/VIEW/GENERAL/", "Erreur", "titreErreur", 0, false]
 
-        "listeSalle" => ["PHP/VIEW/LISTE/", "ListeSalle", "ListeSalle", 2, false],
-     "formSalle" => ["PHP/VIEW/FORM/", "FormSalle", "GestionSalle", 2, false],
-     "actionSalle" => ["PHP/CONTROLLER/ACTION/", "ActionSalle", "Mise à jour de la salle ", 2, false],
+        "listeSalle" => ["PHP/VIEW/LISTE/", "ListeSalle", "ListeSalle", 0, false],
+     "formSalle" => ["PHP/VIEW/FORM/", "FormSalle", "GestionSalle", 0, false],
+     "actionSalle" => ["PHP/CONTROLLER/ACTION/", "ActionSalle", "Mise à jour de la salle ", 0, false],
     //"TestManager" => ["PHP/MODEL/MANAGER/", "TestManager.Class", "titretest", 0, false]
     // "erreur" => ["PHP/VIEW/GENERAL/", "Erreur", "titreErreur", 0, false]
 ];
