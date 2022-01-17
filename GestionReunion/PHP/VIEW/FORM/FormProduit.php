@@ -34,6 +34,8 @@ echo '  <label>' . texte('Prix') . ' :</label>
         <input type="number" name="prix" value="' . $prod->getPrix() . '"' . $disabled . '>';
 echo '  <label>' . texte('DatePeremption') . ' :</label>
         <input type="date" name="dateDePeremption" value="' . $prod->getDateDePeremption() . '"' . $disabled . '>';
+
+        
 echo '  <label>' . texte('Categories') . ' :</label>
         <select name="idCategorie" ' . $disabled . '>';
 foreach ($listeCateg as $uneCategorie) {
