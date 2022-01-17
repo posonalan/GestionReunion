@@ -28,7 +28,7 @@ setcookie("lang", $_SESSION['lang'], time()+36000, '/');
 $routes = [
     
     // "default"=>["PHP/MODEL/","TestManager","Test de reunions",0,false],
-    "default" => ["PHP/VIEW/LISTE/", "Formsalle", "GestionSalle", 0, false],
+    "default" => ["PHP/VIEW/FORM/", "FormSalle", "GestionSalle", 0, false],
     
     // "inscription" => ["PHP/VIEW/FORM/", "FormInscription", "Identification", 0, false],
     // "actionInscription" => ["PHP/CONTROLLER/ACTION/", "actionInscription", "Erreur", 0, false],

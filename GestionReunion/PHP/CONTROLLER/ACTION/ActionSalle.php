@@ -20,7 +20,7 @@ switch ($_GET['mode']) {
         }
 }
 if ($pasDErreur) { // si pas d'erreur
-    header("location:index.php?page=listeSalles");
+    header("location:index.php?page=listeSalle");
 } else {
-    header("location:index.php?page=erreur&cible=listeSalles&codeErreur=erreur" . $_GET['mode']);
+    header("location:index.php?page=erreur&cible=listeSalle&codeErreur=erreur" . $_GET['mode']);
 }
