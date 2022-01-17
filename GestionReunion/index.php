@@ -28,6 +28,9 @@ setcookie("lang", $_SESSION['lang'], time()+36000, '/');
 $routes = [
     
     "default"=>["PHP/VIEW/FORM/","FormTache","Form Tache",0,false],
+    // "default"=>["PHP/MODEL/","TestManager","Test de reunions",0,false],
+    "default" => ["PHP/VIEW/LISTE/", "Formsalle", "GestionSalle", 0, false],
+    
     // "inscription" => ["PHP/VIEW/FORM/", "FormInscription", "Identification", 0, false],
     // "actionInscription" => ["PHP/CONTROLLER/ACTION/", "actionInscription", "Erreur", 0, false],
     // "connection" => ["PHP/VIEW/FORM/", "FormConnection", "Identification", 0, false],
@@ -42,6 +45,12 @@ $routes = [
     // "listeCategorie" => ["PHP/VIEW/LISTE/", "ListeCategorie", "ListeCategories", 2, false],
     // "formCategorie" => ["PHP/VIEW/FORM/", "FormCategorie", "GestionCategories", 2, false],
     // "actionCategorie" => ["PHP/CONTROLLER/ACTION/", "ActionCategorie", "Mise à jour du produit", 2, false],
+    //"TestManager" => ["PHP/MODEL/MANAGER/", "TestManager.Class", "titretest", 0, false]
+    // "erreur" => ["PHP/VIEW/GENERAL/", "Erreur", "titreErreur", 0, false]
+
+        "listeSalle" => ["PHP/VIEW/LISTE/", "ListeSalle", "ListeSalle", 0, false],
+     "formSalle" => ["PHP/VIEW/FORM/", "FormSalle", "GestionSalle", 0, false],
+     "actionSalle" => ["PHP/CONTROLLER/ACTION/", "ActionSalle", "Mise à jour de la salle ", 0, false],
     //"TestManager" => ["PHP/MODEL/MANAGER/", "TestManager.Class", "titretest", 0, false]
     // "erreur" => ["PHP/VIEW/GENERAL/", "Erreur", "titreErreur", 0, false]
 ];
