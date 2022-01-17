@@ -120,13 +120,14 @@ class Utilisateurs
 	*/
 	public function toString()
 	{
-		return "<div style=color:pink style=background-color:white><br>*****<br>IdUtilisateur : ".$this->getIdUtilisateur().
-		"<br> Nom : ".$this->getNomUtilisateur().
-		"<br> Prenom : ".$this->getPrenomUtilisateur().
-		"<br> Email : ".$this->getEmailUtilisateur().
-		"<br> MotDePasse : ".$this->getMotDePasseUtilisateur().
-		"<br> Validation : ".$this->getValidationUtilisateur().
-		"<br> Role : ".$this->getIdRole().
-		"<br> ***** <br></div>";
+		// return "<div style=color:pink style=background-color:white><br>*****<br>IdUtilisateur : ".$this->getIdUtilisateur().
+		// "<br> Nom : ".$this->getNomUtilisateur().
+		// "<br> Prenom : ".$this->getPrenomUtilisateur().
+		// "<br> Email : ".$this->getEmailUtilisateur().
+		// "<br> MotDePasse : ".$this->getMotDePasseUtilisateur().
+		// "<br> Validation : ".$this->getValidationUtilisateur().
+		// "<br> Role : ".$this->getIdRole().
+		// "<br> ***** <br></div>";
+		return $this->getPrenomUtilisateur()." ".$this->getNomUtilisateur();
 	}
 }
