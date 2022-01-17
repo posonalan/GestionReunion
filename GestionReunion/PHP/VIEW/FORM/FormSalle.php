@@ -1,6 +1,6 @@
 <?php
 $defaultMode =  $_GET['mode']; //mode en fr
-$modeTraduit = $defaultMode; // On traduit le mode pour la gestion des affichages
+// $modeTraduit = $defaultMode; // On traduit le mode pour la gestion des affichages
 echo '<div class="demiPage colonne">';
 echo '<div id="DivSousTitre">';
 
@@ -28,7 +28,7 @@ echo '  <label>libelleSalle :</label>
         echo '  <label>tailleMaxSalle :</label>
         <input type="text" name="tailleMaxSalle" value="' . $salle->getTailleMaxSalle() . '"' .$disabled.'>';
     if ($defaultMode != 'Editer')
-echo '<input type="submit" value="'.$modeTraduit.'" class=" crudBtn crudBtn'.$defaultMode.'"/>';
+echo '<input type="submit" value="'.$defaultMode.'" class=" crudBtn crudBtn'.$defaultMode.'"/>';
 else echo '<div></div>';
 echo '<a href="index.php?page=ListeSalle" class=" crudBtn crudBtnRetour">Annuler</a>
 </form>';
