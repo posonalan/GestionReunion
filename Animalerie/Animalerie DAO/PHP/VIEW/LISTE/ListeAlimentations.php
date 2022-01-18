@@ -5,7 +5,7 @@ $liste = AlimentationsManager::getList();
     <div id="crudBarreOutil">
         <a class=" crudBtn crudBtnOutil" href='index.php?page=formAlimentations&mode=Ajouter'>Ajouter </a>
     </div>
-    <div id="crudTableau">
+    <div id="crudTableau2">
 
         <div class="crudColonne">Libellé</div>
        <div class="crudColonne">Identifiant aliment</div>

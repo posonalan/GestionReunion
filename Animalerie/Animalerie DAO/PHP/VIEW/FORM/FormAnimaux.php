@@ -13,14 +13,14 @@ switch ($defaultMode) {
 }
 
 echo '<h5>' . $modeTraduit . 'CrudTache' . '</h5></div>
-<form id="formulaire" method="post" action="index.php?page=ActionAnimaux&mode=' . $defaultMode . '">';
+<form id="formulaire" method="post" action="index.php?page=actionAnimaux&mode=' . $defaultMode . '">';
 if (isset($_GET['id'])) {
     $tac = AnimauxManager::findById($_GET['id']);
     $listeAliment = AlimentationsManager::getList();
     $listeMilieuVie = MilieuViesManager::getList();
     
-    $idMilieu=$tac->getIdMilieuVie();
-    $idAlim=$tac->getIdAliment();
+    $idMilieu= $tac->getIdMilieuVie();
+    $idAlim= $tac->getIdAliment();
    
 } else {
     $tac = new Animaux();
@@ -30,6 +30,7 @@ if (isset($_GET['id'])) {
 }
 
 $listeAliment = AlimentationsManager::getList();
+$listeMilieuVie = MilieuViesManager::getList();
 
 // on crée les inputs du formulaire
 // il faut que les name des input correspondent aux attributs de la class
@@ -40,7 +41,7 @@ echo '  <label>LibelleAnimal:</label>
 echo '  <label>prix:</label>
         <input type="text" name="prix" value="' . $tac->getPrix() . '"' . $disabled . '>';
 echo '  <label>DateDeNaissance :</label>
-        <input type="date" name="Date De Naissance" value="' . $tac->getDateDeNaissance() . '"' . $disabled . '>';
+        <input type="date" name="DateDeNaissance" value="' . $tac->getDateDeNaissance() . '"' . $disabled . '>';
 
 echo '  <label>Alimentations:</label>
         <select name="idAliment" ' . $disabled . '>';

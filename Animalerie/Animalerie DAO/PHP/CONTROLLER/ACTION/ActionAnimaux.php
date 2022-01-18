@@ -19,10 +19,10 @@ switch ($_GET['mode']) {
             break;
         }
 }
+
 if ($pasDErreur) { // si pas d'erreur
     header("location:index.php?page=listeAnimaux");
 } else {
     header("location:index.php?page=erreur&cible=listeAnimaux&codeErreur=erreur" . $_GET['mode']);
 }
-
 
