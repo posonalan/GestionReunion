@@ -20,7 +20,7 @@ switch ($_GET['mode']) { /* suivant le mode reçu */
         }
     case "Supprimer": {
         /* on va chercher l'id de la categorie a supprimer dans la liste des Animaux */ 
-            $listeAnimaux = AnimauxManager::getList($p->getIdAliment());
+            $listeAliment = AlimentationsManager::getList($p->getIdAliment());
             /**** Technique informative */
             //    if (count($listeProduit)>0)
             //    {
@@ -34,8 +34,8 @@ switch ($_GET['mode']) { /* suivant le mode reçu */
 
             /**** Technique de suppression en cascade */
             /* on recherche dans la liste des Animaux un Animaux et on le supprime */ 
-            foreach ($listeAnimaux as $unAnimal) {
-                AnimauxManager::delete($unAnimal);
+            foreach ($listeAliment as $unAliment) {
+                AlimentationsManager::delete($unAliment);
             }
             AlimentationsManager::delete($p);
             break;
@@ -43,7 +43,7 @@ switch ($_GET['mode']) { /* suivant le mode reçu */
 }
 
 if (!$erreur) {  // si pas d'erreur
-    header("location:index.php?page=listeAlimentations");   //redirection directe
+    header("location:index.php?page=listeAlimentation");   //redirection directe
 } else {
-    header("refresh:3;url=index.php?page=listeAlimentations");    // on attend 3 secondes avant la redirection
+    header("refresh:3;url=index.php?page=listeAlimentation");    // on attend 3 secondes avant la redirection
 }
