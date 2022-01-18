@@ -7,8 +7,9 @@
     width: 20vw;
     z-index: 30;
     outline: 2px solid black;
-    display: none;
+    /* display: none; */
     padding-bottom: 2vh;
+    flex-direction: row;
 }
 
 .block {
