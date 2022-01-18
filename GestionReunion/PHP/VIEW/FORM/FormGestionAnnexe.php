@@ -26,26 +26,23 @@ if (isset($_GET['id'])) {
  
 }
 
-$listeEtatAvancement = EtatsAvancementsManager::getList();
+$listeReunion = ReunionsManager::getList();
+$listeFichierAnnexe = FichiersAnnexesManager::getList();
 
 // on crée les inputs du formulaire
 // il faut que les name des input correspondent aux attributs de la class
 // si on a les informations (cas Editer, Modifier, supp) on les mets à jour
-echo '  <input type="hidden" name="idTache" value="' . $tac->getIdTache() . '">';
-echo '  <label>' . texte('Libelle') . ' :</label>
-        <input type="text" name="libelleTache" value="' . $tac->getLibelleTache() . '"' . $disabled . '>';
-echo '  <label>' . texte('DateEcheanceTache') . ' :</label>
-        <input type="number" name="DateEcheanceTache" value="' . $tac->getDateEcheanceTache() . '"' . $disabled . '>';
+echo '  <input type="hidden" name="idGestionAnnexe" value="' . $tac->getIdGestionAnnexe(); 
 
-echo '  <label>' . texte('EtatsAvancements') . ' :</label>
-        <select name="idEtatAvancement" ' . $disabled . '>';
-foreach ($listeEtatAvancement as $unEtat) {
+echo '  <label>Reunion :</label>
+        <select name="idReunion" ' . $disabled . '>';
+foreach ($listeReunion as $uneReunion) {
     $sel = "";
-    if ($unEtat->getIdEtatAvancement() == $idEtat) {
+    if ($uneReunion->getIdEtatAvancement() == $idEtat) {
         $sel = "selected";
     }
 
-    echo '<option value="' . $unEtat->getIdEtatAvancement() . '" ' . $sel . ' >' . $unEtat->getLibelleEtatAvancement() . '</option>';
+    echo '<option value="' . $uneReunion->getIdEtatAvancement() . '" ' . $sel . ' >' . $uneReunion->getLibelleEtatAvancement() . '</option>';
 }
 
 echo '  <label>' . texte('Utilisateurs') . ' :</label>
