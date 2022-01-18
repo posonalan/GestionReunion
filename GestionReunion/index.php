@@ -50,7 +50,7 @@ $routes = [
     //"TestManager" => ["PHP/MODEL/MANAGER/", "TestManager.Class", "titretest", 0, false]
     // "erreur" => ["PHP/VIEW/GENERAL/", "Erreur", "titreErreur", 0, false]
 
-        "listeSalle" => ["PHP/VIEW/LISTE/", "ListeSalle", "ListeSalle", 0, false],
+        "ListeSalle" => ["PHP/VIEW/LISTE/", "ListeSalle", "ListeSalle", 0, false],
      "formSalle" => ["PHP/VIEW/FORM/", "FormSalle", "GestionSalle", 0, false],
      "actionSalle" => ["PHP/CONTROLLER/ACTION/", "ActionSalle", "Mise à jour de la salle ", 0, false],
     //"TestManager" => ["PHP/MODEL/MANAGER/", "TestManager.Class", "titretest", 0, false]
