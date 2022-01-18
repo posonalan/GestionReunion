@@ -19,8 +19,8 @@ if (isset($_GET['id'])) {
     $listeAliment = AlimentationsManager::getList();
     $listeMilieuVie = MilieuViesManager::getList();
     
-    $idMilieu=$tac->getIdUtilisateur();
-    $idAlim=$tac->getIdEtatAvancement();
+    $idMilieu=$tac->getIdMilieuVie();
+    $idAlim=$tac->getIdAliment();
    
 } else {
     $tac = new Animaux();
@@ -40,7 +40,7 @@ echo '  <label>LibelleAnimal:</label>
 echo '  <label>prix:</label>
         <input type="text" name="prix" value="' . $tac->getPrix() . '"' . $disabled . '>';
 echo '  <label>DateDeNaissance :</label>
-        <input type="date" name="DateDeNaissance" value="' . $tac->getDateDeNaissance() . '"' . $disabled . '>';
+        <input type="date" name="Date De Naissance" value="' . $tac->getDateDeNaissance() . '"' . $disabled . '>';
 
 echo '  <label>Alimentations:</label>
         <select name="idAliment" ' . $disabled . '>';
@@ -54,7 +54,20 @@ foreach ($listeAliment as $unAlim) {
 }
 echo '</select>';
 
-echo '  <label>MilieuVies :</label>
+echo '  <label>Milieu Vies :</label>
+        <select name="idMilieuVie" ' . $disabled . '>';
+foreach ($listeMilieuVie as $unMilieux) {
+    $sel = "";
+    if ($unMilieux->getIdMilieuVie() == $idMilieu) {
+        $sel = "selected";
+    }
+
+     echo '<option value="' . $unMilieux->getIdMilieuVie() . '" ' . $sel . ' >' . $unMilieux->getLibelleMilieuVie() . '</option>';
+    
+}
+echo '</select>';
+
+echo '<label>Situation Geaographique :</label>
         <select name="idMilieuVie" ' . $disabled . '>';
 foreach ($listeMilieuVie as $unMilieu) {
     $sel = "";
@@ -62,10 +75,11 @@ foreach ($listeMilieuVie as $unMilieu) {
         $sel = "selected";
     }
 
-     echo '<option value="' . $unMilieu->getIdMilieuVie() . '" ' . $sel . ' >' . $unMilieu->getLibelleMilieuVie() ." ".$unMilieu->getSituationGeographique() . '</option>';
-  
+     echo '<option value="' . $unMilieu->getIdMilieuVie() . '" ' . $sel . ' >' .$unMilieu->getSituationGeographique() . '</option>';
+    
 }
 echo '</select>';
+
 
 
 if ($defaultMode != 'Editer'){ 

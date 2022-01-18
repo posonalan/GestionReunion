@@ -155,6 +155,12 @@ form{
     grid-gap: 0.5em;
     grid-auto-rows: minmax(1.5em, auto);
 }
+#crudTableau10Col{
+	display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr 0.5fr 1fr 1fr 1fr 1fr;
+    grid-gap: 0.5em;
+    grid-auto-rows: minmax(1.5em, auto);
+}
 
 #crudTableauAnimaux{
 	display: grid;

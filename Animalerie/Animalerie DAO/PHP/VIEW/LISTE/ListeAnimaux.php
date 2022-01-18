@@ -5,15 +5,17 @@ $liste = AnimauxManager::getList();
     <div id="crudBarreOutil">
         <a class=" crudBtn crudBtnOutil" href='index.php?page=formAnimaux&mode=Ajouter'> Ajouter </a>
     </div>
-    <div id="crudTableau5Col">
+    <div id="crudTableau10Col">
 
     <div class="crudColonne">LibelleAnimal</div>
     <div class="crudColonne">Prix</div>
     <div class="crudColonne">DateDeNaissance</div>
     <div class="crudColonne">LibelleAliment</div>
     <div class="crudColonne">LibelleMilieuVie</div>
-        <div></div>
-        <div></div>
+    <div class="crudColonne">SituationGeographique</div>
+
+        <div></div> 
+        <div></div> 
         <div></div>
         <div></div> 
         <?php foreach ($liste as $elt) {
@@ -24,7 +26,9 @@ $liste = AnimauxManager::getList();
             $unAliment = AlimentationsManager::findById($elt->getIdAliment());
             echo ' <div class="crudColonne">' . $unAliment->getLibelleAliment() . '</div>';
             $unMilieuVie = MilieuViesManager::findById($elt->getIdMilieuVie());
-            echo ' <div class="crudColonne">' . $unMilieuVie->toString() . '</div>';
+            echo ' <div class="crudColonne">' . $unMilieuVie->getLibelleMilieuVie() . '</div>';
+            $unMilieuVie = MilieuViesManager::findById($elt->getIdMilieuVie());
+            echo ' <div class="crudColonne">' . $unMilieuVie->getSituationGeographique() . '</div>';
         
             
            
