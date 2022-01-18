@@ -8,7 +8,7 @@ body, header,div, nav, main, section{
 	justify-content: center;
 }	
 body{
-     background-image: url("../IMG/fondAni.jpg"); 
+     
 	background-size: cover;
 	flex-direction: column;
 
@@ -16,6 +16,48 @@ body{
 
 img {
 	width: 100%;
+}
+.haut{
+	display:flex; 
+	
+}
+.logo{
+
+	height: 10vh; 
+	width: 10vw; 
+}
+
+.textemulticolore {
+	background-image: linear-gradient(to left, rgb(233, 122, 233), indigo, blue, green, yellow, orange, red);  
+	-webkit-background-clip: text;
+	-webkit-background-clip: text;
+	-moz-background-clip: text; 
+	background-clip: text;
+	color: transparent;
+	}
+.hautPartie0{
+	flex: 0.5; 
+}
+	
+.hautPartie1{
+	flex: 1; 
+}
+.hautPartie2{
+	flex: 1; 
+}
+.hautPartie4{
+	flex: 3; 
+}
+
+.hautPartie2{
+	flex: 4; 
+	font-family: 'Pacifico', cursive;
+	font-size: 5em;
+align-items: center;
+}
+
+.hautPartie3{
+	flex: 1; 
 }
 
 .titreListe { 
@@ -188,6 +230,10 @@ form{
 .green{
 	border:1px solid green;
 }
+.logo{
+	width:15vw;
+	height:15vh;
+}
 
 footer {
 	padding-top: 1em; 
@@ -199,23 +245,23 @@ footer {
 
 /*  permet de faire une transition entre plusieurs couleur ou image ou son ou ... */ 
 
- /* body {
+  body {
 	-webkit-animation: background 5s cubic-bezier(1,0,0,1) infinite;
 	animation: background 5s cubic-bezier(1,0,0,1) infinite;  
   }
   
   
   @-webkit-keyframes background {
-	0% { background-color: rgb(108, 150, 106); }
-	50% { background-color: rgb(130, 168, 131); }  
-	75% { background-color: rgb(108, 150, 106); }
-	100% { background-color: rgb(130, 168, 131); } 
+	0% { background-color: rgb(189, 194, 163); }
+	50% { background-color: rgb(163, 194, 163); }  
+	75% { background-color: rgb(194, 177, 163); }
+	100% { background-color: rgb(194, 167, 163); } 
 
   }
   
   @keyframes background {
-	0% { background-color: rgb(108, 150, 106); }
-	50% { background-color: rgb(130, 168, 131); }  
-	75% { background-color: rgb(108, 150, 106); }
-	100% { background-color: rgb(130, 168, 131); } 
-  }  */
+	0% { background-color: rgb(163, 194, 189); }
+	50% { background-color: rgb(163, 185, 194); }  
+	75% { background-color: rgb(165, 163, 194); }
+	100% { background-color: rgb(183, 163, 194); } 
+  }  
