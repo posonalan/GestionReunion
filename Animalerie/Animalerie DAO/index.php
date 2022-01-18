@@ -36,6 +36,11 @@ $routes=[
     "formAlimentations" => ["PHP/VIEW/FORM/", "FormAlimentations", "Gestion des Aliments", 0, false],
     "actionAlimentations" => ["PHP/CONTROLLER/ACTION/", "ActionAlimentations", "Mise à jour du Animaux", 0, false],
 
+	
+	"listeAnimaux" => ["PHP/VIEW/LISTE/", "ListeAnimaux", "Liste des Milieu de vie", 0, false],
+    "formAnimaux" => ["PHP/VIEW/FORM/", "FormAnimaux", "Gestion des Milieu Vie", 0, false],
+    "actionAnimaux" => ["PHP/CONTROLLER/ACTION/", "ActionAnimaux", "Mise à jour du Milieu Vie", 0, false],
+
 ];
 
 if(isset($_GET["page"]))
