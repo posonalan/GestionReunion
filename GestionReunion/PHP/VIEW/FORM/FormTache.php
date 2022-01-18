@@ -1,6 +1,6 @@
 <?php
 $defaultMode =  $_GET['mode'];
-$modeTraduit = texte($defaultMode);
+$modeTraduit = ($defaultMode);
 echo '<div class="demiPage colonne">';
 echo '<div id="DivSousTitre" >';
 
@@ -12,17 +12,20 @@ switch ($defaultMode) {
         break;
 }
 
-echo '<h5>' . $modeTraduit . texte('CrudTache') . '</h5></div>
-<form id="formulaire" method="post" action="index.php?page=actionTache&mode=' . $defaultMode . '">';
+echo '<h5>' . $modeTraduit . 'CrudTache' . '</h5></div>
+<form id="formulaire" method="post" action="index.php?page=ActionTache&mode=' . $defaultMode . '">';
 if (isset($_GET['id'])) {
-    $prod = TachesManager::findById($_GET['id']);
-    $idEtat = $tac->getIdEtatAvancement();
-    $idUtil = $tac->getIdUtilisateur();
-    $idPrio = $tac->getPrioriteTache();
+    $tac = TachesManager::findById($_GET['id']);
+    $listeEtatAvancement = EtatsAvancementsManager::getList();
+    $listeUtilisateur = UtilisateursManager::getList();
+    $listePrioriteTache = PrioritesTachesManager::getList(); 
+    $idUtil=$tac->getIdUtilisateur();
+    $idEtat=$tac->getIdEtatAvancement();
+    $idPrio=$tac->getIdPrioriteTache();
 } else {
     $tac = new Taches();
     $idEtat = null;
-    $idUtil =null;
+    $idUtil = null;
     $idPrio = null;
 }
 
@@ -32,12 +35,12 @@ $listeEtatAvancement = EtatsAvancementsManager::getList();
 // il faut que les name des input correspondent aux attributs de la class
 // si on a les informations (cas Editer, Modifier, supp) on les mets à jour
 echo '  <input type="hidden" name="idTache" value="' . $tac->getIdTache() . '">';
-echo '  <label>' . texte('Libelle') . ' :</label>
+echo '  <label>Libelle:</label>
         <input type="text" name="libelleTache" value="' . $tac->getLibelleTache() . '"' . $disabled . '>';
-echo '  <label>' . texte('DateEcheanceTache') . ' :</label>
-        <input type="number" name="DateEcheanceTache" value="' . $tac->getDateEcheanceTache() . '"' . $disabled . '>';
+echo '  <label>DateEcheanceTache :</label>
+        <input type="date" name="DateEcheanceTache" value="' . $tac->getDateEcheanceTache() . '"' . $disabled . '>';
 
-echo '  <label>' . texte('EtatsAvancements') . ' :</label>
+echo '  <label>EtatsAvancements:</label>
         <select name="idEtatAvancement" ' . $disabled . '>';
 foreach ($listeEtatAvancement as $unEtat) {
     $sel = "";
@@ -47,8 +50,8 @@ foreach ($listeEtatAvancement as $unEtat) {
 
     echo '<option value="' . $unEtat->getIdEtatAvancement() . '" ' . $sel . ' >' . $unEtat->getLibelleEtatAvancement() . '</option>';
 }
-
-echo '  <label>' . texte('Utilisateurs') . ' :</label>
+echo '</select>';
+echo '  <label>Utilisateurs :</label>
         <select name="idUtilisateur" ' . $disabled . '>';
 foreach ($listeUtilisateur as $unUtil) {
     $sel = "";
@@ -56,11 +59,11 @@ foreach ($listeUtilisateur as $unUtil) {
         $sel = "selected";
     }
 
-    echo '<option value="' . $unUtil->getIdUtilisateur() . '" ' . $sel . ' >' . $unUtil->getNomUtilisateur() . '</option>';
-    echo '<option value="' . $unUtil->getIdUtilisateur() . '" ' . $sel . ' >' . $unUtil->getPrenomUtilisateur() . '</option>';
+     echo '<option value="' . $unUtil->getIdUtilisateur() . '" ' . $sel . ' >' . $unUtil->getNomUtilisateur() ." ".$unUtil->getPrenomUtilisateur() . '</option>';
+  
 }
-
-echo '  <label>' . texte('PrioritesTaches') . ' :</label>
+echo '</select>';
+echo '  <label>PrioritesTaches :</label>
         <select name="idPrioriteTache" ' . $disabled . '>';
 foreach ($listePrioriteTache as $unPrio) {
     $sel = "";
@@ -69,14 +72,13 @@ foreach ($listePrioriteTache as $unPrio) {
     }
 
     echo '<option value="' . $unPrio->getIdPrioriteTache() . '" ' . $sel . ' >' . $unPrio->getLibellePrioriteTache() . '</option>';
-
 }
 echo '</select>';
 
-if ($defaultMode != 'Editer')
+if ($defaultMode != 'Editer'){ 
     echo '<input type="submit" value="' . $modeTraduit . '" class=" crudBtn crudBtn' . $defaultMode . '"/>';
-else echo '<div></div>';
+}else {echo '<div></div>';}
 echo '
-<a href="index.php?page=listeTache" class=" crudBtn crudBtnRetour">' . texte('Annuler') . '</a>
+<a href="index.php?page=listeTache" class=" crudBtn crudBtnRetour">Annuler</a>
 </div>
 </form>';
