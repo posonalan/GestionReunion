@@ -8,8 +8,8 @@ class Texte {
 
 private $_idTexte;
 private $_codeTexte;
-private $_codeLangue;
-private $_texte;
+private $_fr;
+private $_en;
 
 
 private static $_attributes=["idAliment","libelleAliment"];
@@ -38,26 +38,27 @@ public function setCodeTexte($codeTexte)
 $this->_codeTexte = $codeTexte;
 }
 
- 
-public function getCodeLangue()
+public function getFr()
 {
-return $this->_codeLangue;
+return $this->_fr;
 }
 
-public function setCodeLangue($codeLangue)
+public function setFr($fr)
 {
-$this->_codeLangue = $codeLangue;
+$this->_fr = $fr;
 
 }
- 
-public function getTexte()
+
+public function getEn()
 {
-return $this->_texte;
+return $this->_en;
 }
 
-public function setTexte($texte)
+public function setEn($en)
 {
-$this->_texte = $texte;
+$this->_en = $en;
+
+
 }
 /*****************Constructeur***************** */
 
@@ -89,8 +90,10 @@ public function hydrate($data)
 */
 public function toString()
 {
-    return "IdTexte : ".$this->getIdTexte()."codeTexte : ".$this->getCodeTexte()."codeLangue : ".$this->getCodeLangue()."texte : ".$this->getTexte()."\n";
+    return "IdTexte : ".$this->getIdTexte()."codeTexte : ".$this->getCodeTexte()."fr : ".$this->getFr()."en : ".$this->getEn()."\n";
 }
+
+
 
 
 

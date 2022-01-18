@@ -17,8 +17,8 @@
             <input type="password" name="confirmation" required />
         </div>
         <div>
-            <label for="adresseMail"><?php echo texte('AdresseEmail') ?></label>
-            <input type="text" name="adresseMail" required />
+            <label for="adresseMail"><?php echo texte('AdresseMail') ?></label>
+            <input type="email" name="adresseMail" required />
         </div>
         <div>
             <label for="role"><?php echo texte('Role') ?></label>

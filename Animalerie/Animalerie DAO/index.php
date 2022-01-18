@@ -27,6 +27,7 @@ setcookie("lang", $_SESSION['lang'], time()+36000, '/');
 $routes=[
 
 	"default" => ["PHP/VIEW/FORM/", "FormConnection", "Identification", 0, false],
+	"inscription" => ["PHP/VIEW/FORM/", "FormInscription", "Identification", 0,false],
 
 	"listeMilieuVie" => ["PHP/VIEW/LISTE/", "ListeMilieuVie", "Liste des Milieu de vie", 0, false],
     "formMilieuVie" => ["PHP/VIEW/FORM/", "FormMilieuVie", "Gestion des Milieu Vie", 0, false],
