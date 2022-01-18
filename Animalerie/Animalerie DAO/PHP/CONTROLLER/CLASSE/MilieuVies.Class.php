@@ -22,7 +22,7 @@ public function getIdMilieuVie()
 return $this->_idMilieuVie;
 }
 
-public function setIdMilieuVie($idMilieuVie)
+public function setIdMilieuVie(int|string $idMilieuVie)
 {
 $this->_idMilieuVie = $idMilieuVie;
 }

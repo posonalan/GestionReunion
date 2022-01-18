@@ -1,16 +1,18 @@
 <?php
-
+echo "daccord"; 
 
 /* action realiser sur la table categorie */ 
 /* initialisation de la variable erreur a faux */ 
 $erreur = false;
  //var_dump($_POST);
- /* on crée un nouvelle objet categorie qu'on met dans une variable p , la methode post permet de faire une demande a la base de données */ 
+ $_POST["idAliment"]=($_POST["idAliment"]=="")?null:$_POST["idAliment"];
+var_dump($_POST); /* on crée un nouvelle objet categorie qu'on met dans une variable p , la methode post permet de faire une demande a la base de données */ 
 $p = new Alimentations($_POST); 
- // var_dump($p);
+ 
  /* la methode get permet de recevoir de la base de données */ 
 switch ($_GET['mode']) { /* suivant le mode reçu */ 
     case "Ajouter": {
+        var_dump($p); 
             AlimentationsManager::add($p);
             break;
         }
