@@ -20,30 +20,30 @@ switch ($_GET['mode']) { /* suivant le mode reçu */
         }
     case "Supprimer": {
         /* on va chercher l'id de la categorie a supprimer dans la liste des Animaux */ 
-            $listeAliment = AlimentationsManager::getList($p->getIdAliment());
-            /**** Technique informative */
-            //    if (count($listeProduit)>0)
-            //    {
-            //        echo 'Il reste des Animaux';
-            //        $erreur=true;
+        $listeAnimaux = AnimauxManager::getList($p->getIdAliment());
+        /**** Technique informative */
+        //    if (count($listeProduit)>0)
+        //    {
+        //        echo 'Il reste des Animaux';
+        //        $erreur=true;
 
-            //    }
-            //    else{
-            //     AlimentationsManager::delete($p);
-            //    }
+        //    }
+        //    else{
+        //     MilieuVieManager::delete($p);
+        //    }
 
-            /**** Technique de suppression en cascade */
-            /* on recherche dans la liste des Animaux un Animaux et on le supprime */ 
-            foreach ($listeAliment as $unAliment) {
-                AlimentationsManager::delete($unAliment);
-            }
-            AlimentationsManager::delete($p);
-            break;
+        /**** Technique de suppression en cascade */
+        /* on recherche dans la liste des Animaux un Animaux et on le supprime */ 
+        foreach ($listeAnimaux as $unAnimal) {
+            AnimauxManager::delete($unAnimal);
+        }
+        AlimentationsManager::delete($p);
+        break;
         }
 }
 
 if (!$erreur) {  // si pas d'erreur
-    header("location:index.php?page=listeAlimentation");   //redirection directe
+    header("location:index.php?page=listeAlimentations");   //redirection directe
 } else {
-    header("refresh:3;url=index.php?page=listeAlimentation");    // on attend 3 secondes avant la redirection
+    header("refresh:3;url=index.php?page=listeAlimentations");    // on attend 3 secondes avant la redirection
 }
