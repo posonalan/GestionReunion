@@ -27,9 +27,11 @@ setcookie("lang", $_SESSION['lang'], time()+36000, '/');
 // Dossier / Nom du fichier / Titre de la page / Autorisation requise / Api ou pas 
 $routes = [
     
-    "default"=>["PHP/VIEW/FORM/","FormTache","Form Tache",0,false],
+    "default"=>["PHP/VIEW/LISTE/","ListeTache","GestionTache",0,false],
+    "formTache" => ["PHP/VIEW/FORM/", "FormTache", "GestionTache", 0, false],
+    "ActionTache" => ["PHP/CONTROLLER/ACTION/", "ActionTache", "GestionTache", 0, false],
     // "default"=>["PHP/MODEL/","TestManager","Test de reunions",0,false],
-    "default" => ["PHP/VIEW/FORM/", "FormSalle", "GestionSalle", 0, false],
+    //"default" => ["PHP/VIEW/FORM/", "FormSalle", "GestionSalle", 0, false],
     
     // "inscription" => ["PHP/VIEW/FORM/", "FormInscription", "Identification", 0, false],
     // "actionInscription" => ["PHP/CONTROLLER/ACTION/", "actionInscription", "Erreur", 0, false],
