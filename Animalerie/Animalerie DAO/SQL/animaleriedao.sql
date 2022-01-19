@@ -1,10 +1,32 @@
-DROP DATABASE IF EXISTS animaleriedao;
+-- phpMyAdmin SQL Dump
+-- version 4.9.2
+-- https://www.phpmyadmin.net/
+--
+-- Hôte : 127.0.0.1:3308
+-- Généré le :  mer. 19 jan. 2022 à 14:21
+-- Version du serveur :  8.0.18
+-- Version de PHP :  7.3.12
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
 
 
-CREATE DATABASE animaleriedao DEFAULT CHARACTER SET utf8;
-Use animaleriedao;
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
 
-USE animaleriedao;
+--
+-- Base de données :  `animaleriedao`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `alimentations`
+--
 
 DROP TABLE IF EXISTS `alimentations`;
 CREATE TABLE IF NOT EXISTS `alimentations` (
@@ -21,6 +43,7 @@ INSERT INTO `alimentations` (`idAliment`, `libelleAliment`) VALUES
 (1, 'vegetaux'),
 (2, 'viandes');
 
+-- --------------------------------------------------------
 
 --
 -- Structure de la table `animaux`
@@ -47,7 +70,7 @@ INSERT INTO `animaux` (`idAnimal`, `libelleAnimal`, `prix`, `dateDeNaissance`, `
 (1, 'lion', 2, '1899-11-30', 1, 1),
 (2, 'vache', 1, '1958-11-30', 2, 1);
 
-
+-- --------------------------------------------------------
 
 --
 -- Structure de la table `milieuvies`
@@ -69,7 +92,7 @@ CREATE TABLE IF NOT EXISTS `milieuvies` (
 INSERT INTO `milieuvies` (`idMilieuVie`, `libelleMilieuVie`, `situationGeographique`, `climat`) VALUES
 (1, 'montagne', 'Asie', 'Chaud');
 
-
+-- --------------------------------------------------------
 
 --
 -- Structure de la table `texte`
@@ -99,7 +122,7 @@ INSERT INTO `texte` (`idTexte`, `codeTexte`, `fr`, `en`) VALUES
 (8, 'AdresseMail', 'AdresseMail', 'eMail'),
 (9, 'Role', 'role', 'role');
 
-
+-- --------------------------------------------------------
 
 --
 -- Structure de la table `utilisateurs`
@@ -110,20 +133,23 @@ CREATE TABLE IF NOT EXISTS `utilisateurs` (
   `idUtilisateur` int(11) NOT NULL AUTO_INCREMENT,
   `nom` varchar(50) NOT NULL,
   `prenom` varchar(50) NOT NULL,
+  `adresseMail` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `telephone` int(10) NOT NULL,
   `motDePasse` varchar(50) NOT NULL,
-  `adresseMail` varchar(50) NOT NULL,
-  `role` int(11) NOT NULL COMMENT '2 Admin 1 User',
-  `pseudo` varchar(50) NOT NULL,
+  `role` int(11) DEFAULT NULL COMMENT '2 Admin 1 User',
+  `pseudo` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
   PRIMARY KEY (`idUtilisateur`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `utilisateurs`
 --
 
-INSERT INTO `utilisateurs` (`idUtilisateur`, `nom`, `prenom`, `motDePasse`, `adresseMail`, `role`, `pseudo`) VALUES
-(7, 'ad', 'ad', '11d437a3e6695447bd1bf2331651049e', 'ad', 2, 'ad'),
-(8, 'u', 'u', '1d0a5a28d53430e7f2293a1f36682f23', 'u', 1, 'u');
+INSERT INTO `utilisateurs` (`idUtilisateur`, `nom`, `prenom`, `adresseMail`, `telephone`, `motDePasse`, `role`, `pseudo`) VALUES
+(7, 'ad', 'ad', 'test@gmail.com', 615121512, '11d437a3e6695447bd1bf2331651049e', 2, 'ad'),
+(8, 'u', 'u', 'u', 203010203, '1d0a5a28d53430e7f2293a1f36682f23', 1, 'u'),
+(9, 'alan', 'poson', 'alan.poson@gmail.com', 2147483647, '0c2d53364f5e70cdb05768e79ae5f683', 1, 'alan'),
+(10, 'moktar', 'Moktar', 'Moktar@gmail.com', 623252526, '0c2d53364f5e70cdb05768e79ae5f683', 1, 'Moktar');
 
 --
 -- Contraintes pour les tables déchargées
@@ -135,4 +161,8 @@ INSERT INTO `utilisateurs` (`idUtilisateur`, `nom`, `prenom`, `motDePasse`, `adr
 ALTER TABLE `animaux`
   ADD CONSTRAINT `FK_animaux_alimentations` FOREIGN KEY (`idAliment`) REFERENCES `alimentations` (`idAliment`),
   ADD CONSTRAINT `FK_animaux_milieuvies` FOREIGN KEY (`idMilieuVie`) REFERENCES `milieuvies` (`idMilieuVie`);
+COMMIT;
 
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
