@@ -2,6 +2,9 @@
 $liste = AlimentationsManager::getList();
 ?>
 <div class="demiPage colonne">
+
+<div class= "titreListe">Liste Aliments</div>
+
     <div id="crudBarreOutil">
         <a class=" crudBtn crudBtnOutil" href='index.php?page=formAlimentations&mode=Ajouter'>Ajouter </a>
     </div>

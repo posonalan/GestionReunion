@@ -2,6 +2,9 @@
 $liste = AnimauxManager::getList();
 ?>
 <div class="demiPage colonne">
+
+<div class= "titreListe">Liste Animaux</div>
+
     <div id="crudBarreOutil">
         <a class=" crudBtn crudBtnOutil" href='index.php?page=formAnimaux&mode=Ajouter'> Ajouter </a>
     </div>
