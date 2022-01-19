@@ -16,7 +16,7 @@ listForms.forEach(formulaire => {
     InputsCheckValidity(listInputs, listInputsValidity, submit, formulaire);
 
     var listePassword = formulaire.querySelectorAll("input[type=password]");
-    listePassword.forEach(pwd => {
+    listePassword.forEach(motDePasse => {
 
         // on empeche le copier coller sur les mots de passe
         pwd.addEventListener('contextmenu', annule);

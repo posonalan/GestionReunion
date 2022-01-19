@@ -1,6 +1,6 @@
 <?php
 /* on va demander les pseudo */ 
-$uti = UtilisateursManager::findByPseudo($_POST['pseudo']);
+$uti = UtilisateursManager::findByAdresseMail($_POST['adresseMail']);
 /* si le pseudo est bon ( donc different de faux )*/ 
 if ($uti != false) {
 /* si le mot de passe crypter est egal a cryptage de la bdd alors cest bon */ 
