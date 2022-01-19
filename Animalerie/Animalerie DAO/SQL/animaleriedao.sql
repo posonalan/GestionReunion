@@ -1,31 +1,10 @@
--- phpMyAdmin SQL Dump
--- version 5.0.2
--- https://www.phpmyadmin.net/
---
--- Hôte : 127.0.0.1:3306
--- Généré le : mar. 18 jan. 2022 à 16:07
--- Version du serveur :  5.7.31
--- Version de PHP : 7.3.21
-
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-START TRANSACTION;
-SET time_zone = "+00:00";
+DROP DATABASE IF EXISTS animaleriedao;
 
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
+CREATE DATABASE animaleriedao DEFAULT CHARACTER SET utf8;
+Use animaleriedao;
 
---
--- Base de données : `animaleriedao`
---
-
--- --------------------------------------------------------
-
---
--- Structure de la table `alimentations`
---
+USE animaleriedao;
 
 DROP TABLE IF EXISTS `alimentations`;
 CREATE TABLE IF NOT EXISTS `alimentations` (
@@ -42,7 +21,6 @@ INSERT INTO `alimentations` (`idAliment`, `libelleAliment`) VALUES
 (1, 'vegetaux'),
 (2, 'viandes');
 
--- --------------------------------------------------------
 
 --
 -- Structure de la table `animaux`
@@ -69,7 +47,7 @@ INSERT INTO `animaux` (`idAnimal`, `libelleAnimal`, `prix`, `dateDeNaissance`, `
 (1, 'lion', 2, '1899-11-30', 1, 1),
 (2, 'vache', 1, '1958-11-30', 2, 1);
 
--- --------------------------------------------------------
+
 
 --
 -- Structure de la table `milieuvies`
@@ -91,7 +69,7 @@ CREATE TABLE IF NOT EXISTS `milieuvies` (
 INSERT INTO `milieuvies` (`idMilieuVie`, `libelleMilieuVie`, `situationGeographique`, `climat`) VALUES
 (1, 'montagne', 'Asie', 'Chaud');
 
--- --------------------------------------------------------
+
 
 --
 -- Structure de la table `texte`
@@ -121,7 +99,7 @@ INSERT INTO `texte` (`idTexte`, `codeTexte`, `fr`, `en`) VALUES
 (8, 'AdresseMail', 'AdresseMail', 'eMail'),
 (9, 'Role', 'role', 'role');
 
--- --------------------------------------------------------
+
 
 --
 -- Structure de la table `utilisateurs`
@@ -157,8 +135,4 @@ INSERT INTO `utilisateurs` (`idUtilisateur`, `nom`, `prenom`, `motDePasse`, `adr
 ALTER TABLE `animaux`
   ADD CONSTRAINT `FK_animaux_alimentations` FOREIGN KEY (`idAliment`) REFERENCES `alimentations` (`idAliment`),
   ADD CONSTRAINT `FK_animaux_milieuvies` FOREIGN KEY (`idMilieuVie`) REFERENCES `milieuvies` (`idMilieuVie`);
-COMMIT;
 
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

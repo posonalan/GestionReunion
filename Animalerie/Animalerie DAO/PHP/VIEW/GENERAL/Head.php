@@ -12,6 +12,11 @@
 	<link rel="stylesheet" href="./CSS/style.css">
 	<link rel="stylesheet" href="./CSS/root.css">
     <link rel="stylesheet" href="./CSS/menu.css">
+
+	<link rel="stylesheet" href="../CSS/form.css">
+	<link rel="stylesheet" href="../CSS/index.php">
+	 <link rel="stylesheet" href="../CSS/login.css">
+	
    
 </head>
 <body>

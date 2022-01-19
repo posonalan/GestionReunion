@@ -11,7 +11,8 @@ if ($uti != false) {
         /* la session appartient a cette utilisateur */ 
         $_SESSION['utilisateur'] = $uti;
         /* redirection a l'acceuil */ 
-        header("location:index.php?page=accueil");
+        // header("location:index.php?page=accueil");
+        header("refresh:3;url=index.php?page=accueil");
     } else {
     // var_dump($uti);
         echo '<div class="erreur">le mot de passe est incorrect</div>';
