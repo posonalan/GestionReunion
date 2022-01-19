@@ -1,7 +1,7 @@
-<!-- <nav class="menuHamburger">
-        <div class="mini"></div>
-       Bloc affiché quand on clique sur l'icone -->
-       <div class="block">
+<nav >
+        <div class="mini"><i class="fas fa-bars fa-2x"></i></div>
+       Bloc affiché quand on clique sur l'icone
+       <div class="menuHamburger block">
             <!-- Pour fermer la fenetre ouverte -->
             <div class="espace"></div>
             <div id="fermetureMenu" class="">
