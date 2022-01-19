@@ -17,8 +17,7 @@
     <link rel="stylesheet" href="./CSS/menu.css">
 
 	<link rel="stylesheet" href="./CSS/form.css">
-	<link rel="stylesheet" href="./CSS/index.php">
-	 <link rel="stylesheet" href="./CSS/login.css">
+    <link rel="stylesheet" href="./CSS/login.css">
 	
    
 </head>
