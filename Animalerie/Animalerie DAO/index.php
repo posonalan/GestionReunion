@@ -32,6 +32,7 @@ $routes = [
 	"connection" => ["PHP/VIEW/FORM/", "FormConnection", "Identification", 0, false],
 	
 	"actionInscription" => ["PHP/CONTROLLER/ACTION/", "ActionInscription", "Identification", 0, false],
+"actionConnection" => ["PHP/CONTROLLER/ACTION/", "ActionConnection", "Identification", 0, false],
 
 	"listeMilieuVie" => ["PHP/VIEW/LISTE/", "ListeMilieuVie", "Liste des Milieu de vie", 0, false],
 	"formMilieuVie" => ["PHP/VIEW/FORM/", "FormMilieuVie", "Gestion des Milieu Vie", 0, false],
