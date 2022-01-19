@@ -1,7 +1,7 @@
-<nav class="menuHamburger">
+<!-- <nav class="menuHamburger">
         <div class="mini"></div>
-        <!-- Bloc affiché quand on clique sur l'icone -->
-        <div class="block">
+       Bloc affiché quand on clique sur l'icone -->
+       <div class="block">
             <!-- Pour fermer la fenetre ouverte -->
             <div class="espace"></div>
             <div id="fermetureMenu" class="">
@@ -19,7 +19,7 @@
                 <div class="menu colonne">
                     <!-- titre de l'item -->
                     <div class="menuItem">
-                        <div>About</div>
+                        <div>Accueil</div>
                         <div class="vMini"><i class="fas fa-chevron-right"></i></div>
                     </div>
                     <!-- sous item -->
@@ -31,12 +31,12 @@
                 <div class="miniEspace"></div>
                 <div class="menu colonne">
                     <div class="menuItem">
-                        <div>Services</div>
+                        <div>Liste</div>
                         <div class="vMini"><i class="fas fa-chevron-right"></i></div>
                     </div>
                     <div class="noDisplay colonne">
                         <div class="miniEspace"></div>
-                        <div class="childMenuItem">Research</div>
+                        <div class="childMenuItem">Liste Animaux</div>
                         <div class="miniEspace"></div>
                         <div class="childMenuItem">Creation</div>
                         <div class="miniEspace"></div>
@@ -56,4 +56,4 @@
             </div>
         </div>
         <div class="mini"></div>
-    </nav>
+    </nav> 

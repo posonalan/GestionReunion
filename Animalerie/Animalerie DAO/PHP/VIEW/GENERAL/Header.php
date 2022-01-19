@@ -13,6 +13,19 @@
             <div class="logo"><img src="./IMG/twitter.png" alt="" /><a href="http://www.exempledesiteweb.com/exemple.html#blablabla"></div>
      
         </div> -->
+        
+        <?php
+
+if (isset($_SESSION['utilisateur'])) {
+    echo '<div class="texteColore centrer">Bonjour' ." ". $_SESSION['utilisateur']->getNom() . '</div>';
+    echo '<div><a href="index.php?page=deconnection" class="texteColore centrer">Deconnecter</a></div>';
+} else {
+    echo '<a href="index.php?page=connection" class="texteColore centrer">Connexion</a>';
+}
+
+?>
+
+
     </div>
     </div>
 </header>

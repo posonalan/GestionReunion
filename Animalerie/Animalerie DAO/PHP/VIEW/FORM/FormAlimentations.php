@@ -25,7 +25,7 @@ else{
     /* sinon on crée un nouvel objet */ 
 
     $aliment = new Alimentations();
-    var_dump($aliment); 
+   // var_dump($aliment); 
 }
 /* on cache l'id quand meme , faut garder son jardin secret */ 
 echo '  <input type="hidden" name="idAliment" value="' . $aliment->getIdAliment() . '">';

@@ -6,13 +6,13 @@ echo "daccord";
 $erreur = false;
  //var_dump($_POST);
  $_POST["idAliment"]=($_POST["idAliment"]=="")?null:$_POST["idAliment"];
-var_dump($_POST); /* on crée un nouvelle objet categorie qu'on met dans une variable p , la methode post permet de faire une demande a la base de données */ 
+//var_dump($_POST); /* on crée un nouvelle objet categorie qu'on met dans une variable p , la methode post permet de faire une demande a la base de données */ 
 $p = new Alimentations($_POST); 
  
  /* la methode get permet de recevoir de la base de données */ 
 switch ($_GET['mode']) { /* suivant le mode reçu */ 
     case "Ajouter": {
-        var_dump($p); 
+        //var_dump($p); 
             AlimentationsManager::add($p);
             break;
         }

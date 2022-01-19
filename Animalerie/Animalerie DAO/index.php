@@ -30,7 +30,8 @@ $routes = [
 	"inscription" => ["PHP/VIEW/FORM/", "FormInscription", "Identification", 0,false],
 	"accueil" => ["PHP/VIEW/GENERAL/", "Accueil", "accueil", 0, false],
 	"connection" => ["PHP/VIEW/FORM/", "FormConnection", "Identification", 0, false],
-	
+	  "deconnection" => ["PHP/CONTROLLER/ACTION/", "ActionDeconnection", "Erreur", 0, false],
+
 	"actionInscription" => ["PHP/CONTROLLER/ACTION/", "ActionInscription", "Identification", 0, false],
 	"actionConnection" => ["PHP/CONTROLLER/ACTION/", "ActionConnection", "Identification", 0, false],
 
