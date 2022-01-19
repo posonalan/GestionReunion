@@ -8,14 +8,22 @@ body, header,div, nav, main, section, .flex{
 	justify-content: center;
 }	
 body{
-    /* background-color: black; */
+    background-color:white ; 
 }
 
 img {
 	width: 100%;
 }
+
+.flexNone
+{
+	flex:none;
+}
 .colonne{
     flex-direction: column;
+}
+.mini{
+	flex:0.1;
 }
 .demi{
 	flex:0.5;
@@ -24,8 +32,10 @@ img {
 	
 	color: coral;
 }
+
 .centrer{
 	align-items: center;
+	justify-content:center;
 }
 .titre {
 	flex: 5;
@@ -50,7 +60,7 @@ img {
 }
 .demiPage
 {
-	width: 50vw;
+	/* width: 50vw; */
 	align-self: center;
 	background-color: wheat;
 	padding: 5em;
@@ -60,6 +70,8 @@ img {
 .crudColonne {
 	padding: 0.5vw 1vw;
 	border: black solid 0.5px;
+	font-size: 1.2em;
+	
 }
 
 
@@ -126,6 +138,13 @@ form{
     grid-gap: 0.5em;
     grid-auto-rows: minmax(1.5em, auto);
 }
+#crudTableau5Col{
+	display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr 0.5fr 1fr 1fr 1fr;
+    grid-gap: 0.5em;
+    grid-auto-rows: minmax(1.5em, auto);
+}
+
 .erreur{
 	font-size: 1.2em;
 	font-weight: 900;
@@ -137,4 +156,5 @@ form{
 .green{
 	border:1px solid green;
 }
+
 

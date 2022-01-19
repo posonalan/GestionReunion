@@ -58,7 +58,8 @@ class PrioritesTaches
      */
     public function toString()
     {
-        return "<br>IdPrioriteTache : ".$this->getIdPrioriteTache().
-               "<br>LibellePrioriteTache : ".$this->getLibellePrioriteTache() ;
+    //     return "<br>IdPrioriteTache : ".$this->getIdPrioriteTache().
+    //            "<br>LibellePrioriteTache : ".$this->getLibellePrioriteTache() ;
+    return $this->getLibellePrioriteTache();
     }  
 }

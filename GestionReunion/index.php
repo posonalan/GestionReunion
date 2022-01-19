@@ -26,8 +26,13 @@ setcookie("lang", $_SESSION['lang'], time()+36000, '/');
 /* création d'un tableau de redirection, en fonction du page, on choisit la page à afficher */
 // Dossier / Nom du fichier / Titre de la page / Autorisation requise / Api ou pas 
 $routes = [
-    //"default" => ["PHP/VIEW/General/", "Accueil", "Accueil", 0, false],
-    "default"=>["PHP/MODEL/","TestManager","Test de reunions",0,false],
+    
+    "default"=>["PHP/VIEW/LISTE/","ListeTache","GestionTache",0,false],
+    "formTache" => ["PHP/VIEW/FORM/", "FormTache", "GestionTache", 0, false],
+    "ActionTache" => ["PHP/CONTROLLER/ACTION/", "ActionTache", "GestionTache", 0, false],
+    // "default"=>["PHP/MODEL/","TestManager","Test de reunions",0,false],
+    //"default" => ["PHP/VIEW/FORM/", "FormSalle", "GestionSalle", 0, false],
+    
     // "inscription" => ["PHP/VIEW/FORM/", "FormInscription", "Identification", 0, false],
     // "actionInscription" => ["PHP/CONTROLLER/ACTION/", "actionInscription", "Erreur", 0, false],
     // "connection" => ["PHP/VIEW/FORM/", "FormConnection", "Identification", 0, false],
@@ -42,7 +47,13 @@ $routes = [
     // "listeCategorie" => ["PHP/VIEW/LISTE/", "ListeCategorie", "ListeCategories", 2, false],
     // "formCategorie" => ["PHP/VIEW/FORM/", "FormCategorie", "GestionCategories", 2, false],
     // "actionCategorie" => ["PHP/CONTROLLER/ACTION/", "ActionCategorie", "Mise à jour du produit", 2, false],
-    "TestManager" => ["PHP/MODEL/MANAGER/", "TestManager.Class", "titretest", 0, false]
+    //"TestManager" => ["PHP/MODEL/MANAGER/", "TestManager.Class", "titretest", 0, false]
+    // "erreur" => ["PHP/VIEW/GENERAL/", "Erreur", "titreErreur", 0, false]
+
+        "ListeSalle" => ["PHP/VIEW/LISTE/", "ListeSalle", "ListeSalle", 0, false],
+     "formSalle" => ["PHP/VIEW/FORM/", "FormSalle", "GestionSalle", 0, false],
+     "actionSalle" => ["PHP/CONTROLLER/ACTION/", "ActionSalle", "Mise à jour de la salle ", 0, false],
+    //"TestManager" => ["PHP/MODEL/MANAGER/", "TestManager.Class", "titretest", 0, false]
     // "erreur" => ["PHP/VIEW/GENERAL/", "Erreur", "titreErreur", 0, false]
 ];
 
@@ -58,5 +69,5 @@ if (isset($_GET["page"])) {
     }
 } else {
     //Sinon afficher la page par defaut
-    AfficherPage($routes["TestManager"]);
+    AfficherPage($routes["default"]);
 }
