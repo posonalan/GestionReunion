@@ -22,11 +22,7 @@
                         <div>Accueil</div>
                         <div class="vMini"><i class="fas fa-chevron-right"></i></div>
                     </div>
-                    <!-- sous item -->
-                    <div class="noDisplay colonne">
-                        <div class="miniEspace"></div>
-                        <div class="childMenuItem">Entreprise</div>
-                    </div>
+                 
                 </div>
                 <div class="miniEspace"></div>
                 <div class="menu colonne">
@@ -35,24 +31,16 @@
                         <div class="vMini"><i class="fas fa-chevron-right"></i></div>
                     </div>
                     <div class="noDisplay colonne">
+                        <div class="miniEspace"></div>  <div class="miniEspace"></div>
+                        <div class="childMenuItem"> <a href="index.php?page=listeAnimaux">Liste Animaux</div>
                         <div class="miniEspace"></div>
-                        <div class="childMenuItem">Liste Animaux</div>
+                        <div class="childMenuItem"> <a href="index.php?page=listeAlimentations">Liste Aliments</div>
                         <div class="miniEspace"></div>
-                        <div class="childMenuItem">Creation</div>
-                        <div class="miniEspace"></div>
-                        <div class="childMenuItem">Advertising</div>
-                        <div class="miniEspace"></div>
-                        <div class="childMenuItem">Branding</div>
+                        <div class="childMenuItem"> <a href="index.php?page=listeMilieuVie">Liste Milieu Vie</div>
+                       
                     </div>
                 </div>
-                <div class="miniEspace"></div>
-                <div class="menu colonne">
-                    <div class="menuItem">Careers</div>
-                </div>
-                <div class="miniEspace"></div>
-                <div class="menu colonne">
-                    <div class="menuItem">Contact</div>
-                </div>
+               
             </div>
         </div>
         <div class="mini"></div>
