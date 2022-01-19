@@ -265,3 +265,29 @@
 // {
 //     echo $info->toString();
 // }
+
+//*********************************OrdresDuJourManager**************************** *//
+
+//ADD OrdresDuJourManager : ok
+// $m = new OrdresDuJour(["idReunion"=>2,"idSujet"=>2]);
+// var_dump($m);
+// $D = OrdresDuJourManager::add($m);
+// var_dump($D);
+
+// //Update OrdresDuJourManager : ok
+$m = OrdresDuJourManager::findById(1);
+var_dump($m);
+$m->setIdReunion("2");
+var_dump($m);
+OrdresDuJourManager::update($m);
+
+// //Delete OrdresDuJourManager : ok
+// $m = OrdresDuJourManager::findById(2);
+// OrdresDuJourManager::delete($m);
+
+// //Get Liste OrdresDuJourManager : ok
+// $tableau = OrdresDuJourManager::getList();
+// foreach ($tableau as $info)
+// {
+//     echo $info->toString();
+// }
