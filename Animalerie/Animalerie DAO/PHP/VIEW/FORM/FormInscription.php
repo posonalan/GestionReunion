@@ -1,6 +1,10 @@
+ 
+ <!-- mdp = Test@999 -->
+ 
  <div class="coinhaut hauteur"></div>
+
     <section class="center bgc1 hauteur ">
-        <form>
+        <form action="index.php?page=actionInscription" method="POST">
             <div class="titre colSpan2 center">Connexion</div>
             <div class=" colSpan2 "></div>
             <div class=" colSpan2 "></div>

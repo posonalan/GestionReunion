@@ -4,7 +4,6 @@ const white = "inputVide";
 const red = "inputIncorrect";
 
 var listForms = document.querySelectorAll('form');
-
 //Récupère tous les inputs du formulaire et effectue une première vérification & ajoute les eventListener sur chacun d'entre eux.
 listForms.forEach(formulaire => {
     // pour chaque formulaire, on récupère les inputs
@@ -16,6 +15,39 @@ listForms.forEach(formulaire => {
     // on lance la vérification sur tous les champs du formulaire
     InputsCheckValidity(listInputs, listInputsValidity, submit, formulaire);
 
+    var listePassword = formulaire.querySelectorAll("input[type=password]");
+    listePassword.forEach(pwd => {
+
+        // on empeche le copier coller sur les mots de passe
+        pwd.addEventListener('contextmenu', annule);
+        pwd.addEventListener("paste", annule);
+
+        // on recupere l'input du password ayant le pattern
+        let aide = pwd.getAttribute("pattern");
+        if (aide!=null)
+        {
+            pwd.addEventListener("input", function (event) {
+                document.getElementById("infoMDP").style.display="flex";
+                let aideMdp=document.getElementById("infoMDP");
+                let lesImages = aideMdp.getElementsByTagName("i");
+                let lesCheck = ["(?=.*[A-Z])","(?=.*[a-z])","(?=.*[0-9])","(?=.*[!@#\$%\^&\*+])","([a-zA-Z0-9!@#\$%\^&\*+]{8,})"];
+                for (let i = 0; i < lesCheck.length; i++) {
+                    if (RegExp(lesCheck[i]).test(pwd.value)) {
+                        //la condition est vérifiée, on met la coche verte correspondente
+                        lesImages[i].classList = "far fa-check-circle fa-green";
+                    } else {
+                        lesImages[i].classList = "far fa-times-circle fa-red";
+                    }
+                }
+            });
+
+            // suppression de l'aide mot de passe quand on quitte le champ
+            pwd.addEventListener("blur", function (event) {
+                let aideMdp=document.getElementById("infoMDP").style.display="none";
+            });
+        }
+    });
+    
     if (reset != undefined) {
         // Initialise le bouton reset
         reset.addEventListener('click', function () {
@@ -31,46 +63,19 @@ listForms.forEach(formulaire => {
     });
 });
 
-// /*****************************Mot de passe *************************************/
+/*****************************Mot de passe *************************************/
 
-// //gestion de l'oeil dans le mot de passe
-// var listeOeil = document.getElementsByClassName("oeil");
-// for (let i = 0; i < listeOeil.length; i++) {
-//     // on affiche un petit oeil qui permet de voir de mot de passe 
-//     listeOeil[i].addEventListener("mousedown", function () {
-//         affichePassWord(listeOeil[i], true);
-//     });
-//     listeOeil[i].addEventListener("mouseup", function () {
-//         affichePassWord(listeOeil[i], false);
-//     });
-// }
-// var listePassword = formulaire.querySelectorAll("input[type=password]");
-// listePassword.forEach(pwd => {
-//     // on empeche le copier coller sur les mots de passe
-//     pwd.addEventListener('contextmenu', annule);
-//     pwd.addEventListener("paste", annule);
-// });
-// // affichage de l'aide à la saisie du mot de passe 
-// listePassword[0].addEventListener("input", function (event) {
-//         let aideMdp = document.getElementsByClassName("aideMdp")[0];
-//         aideMdp.style.display = "flex";
-//         let lesImages = aideMdp.getElementsByTagName("i");
-//         let lesCheck = ["([a-zA-Z0-9!@#\$%\^&\*+]{8,})", "(?=.*[A-Z])", "(?=.*[a-z])", "(?=.*[0-9])", "(?=.*[!@#\$%\^&\*+])"];
-//         for (let i = 0; i < lesCheck.length; i++) {
-//             if (RegExp(lesCheck[i]).test(mdp.value)) {
-//                 //la condition est vérifiée, on met la coche verte correspondente
-//                 lesImages[i].classList = "far fa-check-circle vert";
-//             } else {
-//                 lesImages[i].classList = "far fa-times-circle rouge";
-//             }
-//         }
-//     });
-
-//     //suppression de l'aide mot de passe quand on quitte le champ
-//     mdp.addEventListener("blur", function (event) {
-//         document.getElementsByClassName("aideMdp")[0].style.display = "none";
-//     });
-
+//gestion de l'oeil dans le mot de passe
+var listeOeil = document.getElementsByClassName("oeil");
+for (let i = 0; i < listeOeil.length; i++) {
+    // on affiche un petit oeil qui permet de voir de mot de passe 
+    listeOeil[i].addEventListener("mousedown", function () {
+        affichePassWord(listeOeil[i], true);
+    });
+    listeOeil[i].addEventListener("mouseup", function () {
+        affichePassWord(listeOeil[i], false);
+    });
+}
 
 /***********************************Function************************************/
 
@@ -84,7 +89,6 @@ listForms.forEach(formulaire => {
  * @param {object} formulaire 
  */
 function InputsCheckValidity(listInputs, listInputsValidity, submit, formulaire) {
-    console.log(listInputs);
     // Pour chaque input, on vérifie sa validité
     listInputs.forEach(element => {
         if (element.checkValidity()) {
@@ -107,8 +111,8 @@ function InputsCheckValidity(listInputs, listInputsValidity, submit, formulaire)
  * @param {object} formulaire 
  */
 function verifPassword(listInputsValidity, formulaire) {
-let listePassword= formulaire.querySelectorAll("intput[type='password']")
-    if (listePassword.length == 2 && listePassword[0].value != listePassword[1].value) {
+    let listePassword = formulaire.querySelectorAll("input[type=password]");
+    if (listePassword.length == 2 && listePassword[0].value != listePassword[1].value) { //modif
         listInputsValidity[listePassword[1].name] = false;
     }
 };
@@ -153,7 +157,6 @@ function resetInputs(listInputs, listInputsValidity, submit, formulaire) {
  * @param {object} submit 
  */
 function revealSubmitButton(listInputsValidity, submit) {
-    console.log(listInputsValidity);
     // on active le bouton
     submit.disabled = false;
     // si un input est mal rempli on désactive le bouton
@@ -176,9 +179,7 @@ function annule(event) {
  * @param {boolean} flag 
  */
 function affichePassWord(input, flag) {
-    inp = input.parentNode.parentNode.querySelector("input");
+    inp = input.previousElementSibling;
     if (flag) inp.type = "text";
     else inp.type = "password";
 }
-
-

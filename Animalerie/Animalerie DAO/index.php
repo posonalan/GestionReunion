@@ -26,10 +26,10 @@ setcookie("lang", $_SESSION['lang'], time() + 36000, '/');
 
 $routes = [
 
-	"default" => ["PHP/VIEW/FORM/", "FormConnection", "Identification", 0, false],
+	"default" => ["PHP/VIEW/FORM/", "FormInscription", "Identification", 0, false],
 	"inscription" => ["PHP/VIEW/FORM/", "FormInscription", "Identification", 0,false],
 	"accueil" => ["PHP/VIEW/GENERAL/", "Accueil", "accueil", 0, false],
-	"connection" => ["PHP/VIEW/FORM/", "FormConnection", "Identification", 0, false],
+	"connection" => ["PHP/VIEW/FORM/", "FormInscription", "Identification", 0, false],
 	  "deconnection" => ["PHP/CONTROLLER/ACTION/", "ActionDeconnection", "Erreur", 0, false],
 
 	"actionInscription" => ["PHP/CONTROLLER/ACTION/", "ActionInscription", "Identification", 0, false],
