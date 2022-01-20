@@ -46,7 +46,9 @@ grid-column: 1 / span 2;
 }
 
 .oeil {
-    justify-content: flex-end;
+    position: absolute;
+    right: 0.5em;
+    margin-top:0.5em;
 }
 
 #infoMDP{

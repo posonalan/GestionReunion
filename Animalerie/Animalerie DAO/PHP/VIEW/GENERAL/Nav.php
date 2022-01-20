@@ -18,20 +18,26 @@
                     <div class="vMini"><i class="fas fa-chevron-right"></i></div>
                 </div>
                 <div class="noDisplay colonne">
-                    <div class="miniEspace"></div>
+
                     <div class="miniEspace"></div>
                     <div class="childMenuItem"> <a href="index.php?page=listeAnimaux">Liste Animaux</div>
                     <div class="miniEspace"></div>
                     <div class="childMenuItem"> <a href="index.php?page=listeAlimentations">Liste Aliments</div>
                     <div class="miniEspace"></div>
                     <div class="childMenuItem"> <a href="index.php?page=listeMilieuVie">Liste Milieu Vie</div>
-
+                    <div class="miniEspace"></div>
+                    <div class="childMenuItem"> <a href="index.php?page=creeNav">Cree nav</div>
+                    <div class="miniEspace"></div>
                 </div>
+
+                
+
+                
             </div>
 
         </div>
     </div>
-    
+
 </nav>
 
 

@@ -65,15 +65,14 @@ li a:hover {
 }   */
 
 /**************** Nav *****************/
-
-
 .menuHamburger {
     background-color: var(--color);
- 
-   
-
-  
-  
+    position: absolute;
+    width: 20vw;
+    z-index: 30;
+    outline: 2px solid black;
+    display: none;
+    padding-bottom: 2vh;
 }
 
 .block {
@@ -84,21 +83,15 @@ li a:hover {
     background-color: var(--color);
     border: 1px solid black;
     padding: 0.5em;
-   
 }
-
-.menuItem a{
-   justify-content:center;
-}
-
 .childMenuItem {
     background-color: var(--color);
     margin-left: 0.5vw;
 }
 
- .noDisplay {
+.noDisplay {
     display: none;
-} 
+}
 
 .borderRadiusTop {
     border-top-left-radius: 5px;
@@ -108,7 +101,7 @@ li a:hover {
 .borderRadiusBottom {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-} 
+}
 
 
 @media screen and (max-width: 800px)
