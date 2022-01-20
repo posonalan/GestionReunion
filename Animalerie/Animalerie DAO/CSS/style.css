@@ -42,12 +42,15 @@ footer {
 
 	height: 5vh; 
 	width: 5vw; 
+
 }
 .hautPartie0{
 	display:flex;
 	flex-direction: column;
 	align-items : center;
 	flex: 0.5;
+	margin-bottom:3vh; 
+	
 }
 .textemulticolore {
 	background-image: linear-gradient(to left, rgb(242, 167, 242), indigo, blue, green, yellow, orange, red);  
@@ -56,9 +59,15 @@ footer {
 	-moz-background-clip: text; 
 	background-clip: text;
 	color: transparent;
+	
 	}
 
-	
+.iconCo img {
+	height: 3vh; 
+	width: 2vw; 
+	align-self: center;
+
+}	
 .Flex1{
 	flex: 1; 
 }
@@ -75,6 +84,8 @@ footer {
 	font-family: 'Pacifico', cursive;
 	font-size: 4em;
 align-items: center;
+color: white; 
+text-shadow:0 4px 0 #2e9444, 0 -4px 0 #fff240;
 }
 
 .hautPartie3{
@@ -117,7 +128,7 @@ font-size: 0.6em;
 }
 .deco{
 
-	padding: 10%;  
+ align-items: center;
 }
 .titre {
 	flex: 5;
@@ -368,7 +379,9 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
 	   }
 
 
-
+.espaceG{
+	flex : 3 ; 
+}
 	   
 /************* slider *******/
 
