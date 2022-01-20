@@ -1,4 +1,5 @@
 <header>
+    <div class ="headerP1">
     <div class="haut">
         <div class="hautPartie0">
             <img src="./IMG/FR.png" alt="" /> 
@@ -27,5 +28,16 @@ if (isset($_SESSION['utilisateur'])) {
 
 
     </div>
+    <div class="mini center">
+            <div class="mini"></div>
+            <!-- Icone de présence de menu -->
+            <div>
+                <i class="fas fa-bars fa-3x"></i>
+            </div>
+        </div>
+        <div class="center">
+            <h1>Header du formulaire !</h1>
+        </div>
+        <div class="mini"></div>
     </div>
 </header>
