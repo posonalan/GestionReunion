@@ -47,10 +47,10 @@ function afficherPage($page)
 		include 'PHP/VIEW/GENERAL/Head.php';
 		include 'PHP/VIEW/GENERAL/Header.php';
 /* si nous sommes connecter et que la page n'est pas action deconnection */ 
-		// if (isset($_SESSION["utilisateur"]) && $nom != "ActionDeconnection") {
-			include 'PHP/VIEW/GENERAL/Nav.php'; /* montre la nav barre */ 
-		// }	
-
+if (isset($_SESSION["utilisateur"]) && stripos($chemin,"PHP/CONTROLLER/ACTION/") !== 0)
+{
+	include 'PHP/VIEW/GENERAL/Nav.php';
+}
 		include $chemin . $nom . '.php'; //Chargement de la page en fonction du chemin et du nom
 		include 'PHP/VIEW/GENERAL/Footer.php';
 	} else {
