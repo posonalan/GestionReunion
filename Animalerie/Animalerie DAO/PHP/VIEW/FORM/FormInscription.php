@@ -26,7 +26,7 @@
     <section class="center bgc2 hauteur">
     <form action="index.php?page=actionInscription" method="POST">
             <div class="titre colSpan2 center">Inscription</div>
-            <div class=" colSpan2 "></div>
+        
             <label>Nom *</label>
             <input type="text" id="nom" name="nom" pattern="^[a-zA-ZÀ-ÖØ-öø-ÿ'\-]*$" required
                 title="Renseigner votre nom d'usage">
@@ -83,8 +83,8 @@
                 <label>role </label>
                 <input type="number" id="role" name="role"  required
                 title="role"> 
-                <div class=" colSpan2 "></div>
-            <div class=" colSpan2 "></div>
+            
+           
             <input type="reset" value="Reset">
             <input type="submit" value="Ajouter" disabled>
         </form>

@@ -1,8 +1,8 @@
-<nav >
+<!-- <nav >
         <div class="mini"><i class="fas fa-bars fa-2x"></i></div>
        Bloc affiché quand on clique sur l'icone
        <div class="menuHamburger block">
-            <!-- Pour fermer la fenetre ouverte -->
+           
             <div class="espace"></div>
             <div id="fermetureMenu" class="">
                 <div class="center">
@@ -13,11 +13,11 @@
                 </div>
             </div>
             <div class="espace"></div>
-            <!-- Menu à proprement dit -->
+        
             <div id="menu" class="colonne">
-                <!-- 1er item-->
+        
                 <div class="menu colonne">
-                    <!-- titre de l'item -->
+      
                     <div class="menuItem">
                         <div>Accueil</div>
                         <div class="vMini"><i class="fas fa-chevron-right"></i></div>
@@ -45,3 +45,29 @@
         </div>
         <div class="mini"></div>
     </nav> 
+
+     -->
+
+     <nav>
+                    <ul>
+                        <li><a href="#"> Accueil </a></li>
+                        <li class="deroulant"><a href="#"> Listes </a>
+                          <ul class="sous">
+                            <li><a href="index.php?page=listeAnimaux"> Liste Animaux </a></li>
+                            <li><a href="index.php?page=listeAliment"> Liste Aliments</a></li> 
+                            <li><a href="index.php?page=listeMilieuVie"> Liste Milieu vie</a></li>
+                          </ul>
+                        </li>
+            
+                        <li class="deroulant"><a href="#"> Evènements </a>
+                          <ul class="sous">
+                            <li><a href="#"> Promotion </a></li>
+                            <li><a href="#"> Gros lots </a></li>
+                          </ul>
+                        </li>
+  
+                   
+                    
+                    
+                      </ul>
+                </nav>

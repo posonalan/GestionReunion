@@ -19,7 +19,7 @@ body{
 } */
 .haut{
 	display:flex; 
-	
+	background: linear-gradient( #6f836b,#dbd7d7,#dbd7d7,#dbd7d7, #286b1c);
 }
 .hautPartie0 img {
 
@@ -46,12 +46,17 @@ body{
 	flex: 1; 
 }
 
+.hautPartie1 img{
 
+	flex: 0.5;
+	height:15vh;
+	width:15vw;
+}
 
 .hautPartie2{
 	flex: 4; 
 	font-family: 'Pacifico', cursive;
-	font-size: 5em;
+	font-size: 4em;
 align-items: center;
 }
 
@@ -78,8 +83,24 @@ align-items: center;
 }
 .texteColore{
 	align-items: center;
-	color: rgb(255, 255, 255);
-	font-size: 1.2em; 
+	color: rgb(26, 100, 7);
+	font-size: 0.8em; 
+}
+.textAcc{
+	display: flex;
+	flex-direction:column;
+}
+
+.descAcc{
+font-size: 0.6em;
+}
+
+.prix {
+	color: red;
+}
+.deco{
+
+	padding: 10%;  
 }
 .titre {
 	flex: 5;
@@ -236,8 +257,8 @@ form{
 }
 
 footer {
-	padding-top: 1em; 
-	text-align : center;
+	
+	justify-content:center;
 	color: white; 
 	
 }
@@ -252,16 +273,75 @@ footer {
   
   
   @-webkit-keyframes background {
-	0% { background-color: rgb(189, 194, 163); }
-	50% { background-color: rgb(163, 194, 163); }  
-	75% { background-color: rgb(194, 177, 163); }
-	100% { background-color: rgb(194, 167, 163); } 
+	0% { background-color: rgb(187, 199, 128); }
+
+	100% { background-color: rgb(148, 187, 136); } 
 
   }
   
   @keyframes background {
-	0% { background-color: rgb(163, 194, 189); }
-	50% { background-color: rgb(163, 185, 194); }  
-	75% { background-color: rgb(165, 163, 194); }
-	100% { background-color: rgb(183, 163, 194); } 
+	0% { background-color: rgb(125, 172, 135); }
+
+	100% { background-color: rgb(157, 172, 123); } 
   }  
+
+
+
+
+  /* accueil */ 
+
+  .contenuAccueil{
+	  display: flex; 
+	  flex-direction: row;
+  }
+  .marge{
+	  flex : 0.1 ; 
+  }
+
+  .margeColonne{
+	  display: flex; 
+	  flex-direction: column;
+	flex: 1;
+	
+
+  }
+
+
+.margeColonne img{
+	width: 10vw;
+	align-self: center;
+}
+  .espaceVAcc{
+	  height: 10vh;
+  }
+
+  .contenuCentre{
+	  display: flex; 
+	  flex: 10;
+	  flex-direction: column;
+	  background: linear-gradient( #b1ceac,#dbd7d7,#dbd7d7,#dbd7d7, #b1ceac);
+
+border-radius: 20%;
+  }
+
+  .partieAcc{
+	  display: flex; 
+	  flex: 1;  
+  }
+  .partieAcc img {
+	  height: 10vh; 
+	  width: 10vw;
+  }
+  .textmarge{
+	  flex: 0.1;
+  }
+
+  .boutAcc{
+	  width: 10vw;
+	  align-self: center;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	  background: linear-gradient( #d4350d,#dbdad7,rgb(233, 223, 223),#dbd7d7, #286b1c);
+	
+	  border: 1px solid rgb(255, 238, 0);
+	  border-top: 5;
+	   }
