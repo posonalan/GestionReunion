@@ -347,12 +347,14 @@ border-radius: 20%;
 
   .partieAcc{
 	  display: flex; 
+	  flex-direction: column;
 	  flex: 1;  
   }
   .partieAcc img {
-	  height: 10vh; 
-	  width: 10vw;
-  }
+	height: 30vh;
+    width: 20vw;
+}
+  
   .textmarge{
 	  flex: 0.1;
   }
