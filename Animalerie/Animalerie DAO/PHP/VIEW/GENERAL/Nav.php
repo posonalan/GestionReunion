@@ -27,7 +27,7 @@
                 <div class="miniEspace"></div>
                 <div class="menu colonne">
                     <div class="menuItem">
-                        <div>Services</div>
+                        <div>Listes</div>
                         <div class="vMini"><i class="fas fa-chevron-right"></i></div>
                     </div>
                     <div class="noDisplay colonne">

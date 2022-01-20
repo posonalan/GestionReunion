@@ -35,9 +35,7 @@ if (isset($_SESSION['utilisateur'])) {
                 <i class="fas fa-bars fa-3x"></i>
             </div>
         </div>
-        <div class="center">
-            <h1>Header du formulaire !</h1>
-        </div>
+    
         <div class="mini"></div>
     </div>
 </header>
