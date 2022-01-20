@@ -398,8 +398,9 @@ body {
 	flex-wrap: wrap;
 	/* pour prendre la place dont il a besoin */
 	justify-content: space-around;
-	
-}
+  
+
+  }
 
 .partieAcc img {
 	height: 10vh;
