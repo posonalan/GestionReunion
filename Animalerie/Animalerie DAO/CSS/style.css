@@ -33,7 +33,7 @@ body{
 	flex: 0.5;
 }
 .textemulticolore {
-	background-image: linear-gradient(to left, rgb(233, 122, 233), indigo, blue, green, yellow, orange, red);  
+	background-image: linear-gradient(to left, rgb(242, 167, 242), indigo, blue, green, yellow, orange, red);  
 	-webkit-background-clip: text;
 	-webkit-background-clip: text;
 	-moz-background-clip: text; 
@@ -260,6 +260,9 @@ footer {
 	
 	justify-content:center;
 	color: white; 
+	padding-top: 1em; 
+	text-align : center;
+	
 	
 }
 

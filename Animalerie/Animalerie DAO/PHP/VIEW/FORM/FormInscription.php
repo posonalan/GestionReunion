@@ -13,14 +13,14 @@
                 pattern="^[a-zA-Z]([\.\-_]?[a-zA-Z0-9])+@[a-zA-Z]([\.\-_]?[a-zA-Z0-9])+\.[a-zA-Z]{2,4}$" required>
             <label>Mot de passe *</label>
             <input type="password" id="pwd" name="motDePasse" required
-                title="Renseigner le mot de passe envoyé dans le mail de confirmation"
-               >
-            <div class=" colSpan2 "></div>
-            <div class=" colSpan2 "></div>
-            <div class=" colSpan2 "></div>
+                title="Renseigner le mot de passe envoyé dans le mail de confirmation">
+               <div class=" colSpan2 "></div> 
+            
+          
             <div></div>
             <input type="submit" value="Connecter" disabled>
-
+            <div class=" colSpan2 "></div> 
+              <div class=" colSpan2 "></div>
         </form>
     </section>
     <section class="center bgc2 hauteur">
@@ -42,8 +42,9 @@
             <label>Mot de passe </label>
             <div class="relative">
                 <input type="password" id="motDePasse" name="motDePasse" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*\W).{8,}$"
-                    required>
-                <i class="oeil fas fa-eye"></i>
+                    required >  
+                     <i class="oeil fas fa-eye"></i>
+            </div>
 
                 <fieldset id="infoMDP" class="noDisplay ">
                     <legend>Caractères du mot de passe</legend>
@@ -72,11 +73,13 @@
                 </fieldset>
             </div>
             <label>Confirmation </label>
-
+<label>
             <div>
-                <input type="password" id="confirmation" name="confirmation" required>
+                <input type="password" id="confirmation" name="confirmation" required> 
                 <i class="oeil fas fa-eye"></i>
+               
             </div>
+</label>
             <label>pseudo </label>
             <input type="text" id="pseudo" name="pseudo"  required
                 title="pseudo">
@@ -85,11 +88,16 @@
                 title="role"> 
             
            
+                <div class=" colSpan2 "></div>
+                <div class=" colSpan2 "></div>
+            
             <input type="reset" value="Reset">
             <input type="submit" value="Ajouter" disabled>
         </form>
     </section>
     <div class="coinbas hauteur"></div>
+    <div class=" colSpan2 "></div>
+    <script src="../JS/verifForm.js"></script>
     
     
 
