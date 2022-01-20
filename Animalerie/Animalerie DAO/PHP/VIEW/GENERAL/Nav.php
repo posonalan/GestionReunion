@@ -50,11 +50,11 @@
 
      <nav>
                     <ul>
-                        <li><a href="#"> Accueil </a></li>
+                        <li><a href="index.php?page=accueil"> Accueil </a></li>
                         <li class="deroulant"><a href="#"> Listes </a>
                           <ul class="sous">
                             <li><a href="index.php?page=listeAnimaux"> Liste Animaux </a></li>
-                            <li><a href="index.php?page=listeAliment"> Liste Aliments</a></li> 
+                            <li><a href="index.php?page=listeAlimentations"> Liste Aliments</a></li> 
                             <li><a href="index.php?page=listeMilieuVie"> Liste Milieu vie</a></li>
                           </ul>
                         </li>
