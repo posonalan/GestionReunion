@@ -119,3 +119,29 @@ li a:hover {
         display: none;
     }
 }
+
+.test {
+    background-color: rgba(248, 239, 239, 0.568);
+ color: white;
+ padding:0.5vh; 
+   
+}
+.test img {
+    height:7vh; 
+    width:7vw; 
+    flex: 0.5;
+   
+}
+
+.espaceMenu{
+flex : 0.5 ; 
+}
+.textMenu{
+    flex: 2;
+}
+
+.espacePetit{
+    flex: 0.2;
+}
+
+

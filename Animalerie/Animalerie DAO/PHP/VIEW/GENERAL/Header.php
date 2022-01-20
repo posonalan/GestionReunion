@@ -25,28 +25,43 @@
             <div class="logo"><img src="./IMG/twitter.png" alt="" /><a href="http://www.exempledesiteweb.com/exemple.html#blablabla"></div>
      
         </div> -->
-        
-        <?php
 
-if (isset($_SESSION['utilisateur'])) {
-    echo '<div class="texteColore centrer">Bonjour' ." ". $_SESSION['utilisateur']->getNom() . '</div>';
-    echo '<div><a href="index.php?page=deconnection" class="deco centrer">Deconnecter</a></div>';
-} else {
-    echo '<a href="index.php?page=connection" class="texteColore centrer">Connexion</a>';
-}
+            <?php
 
-?>
+            if (isset($_SESSION['utilisateur'])) {
+                echo '<div class="texteColore centrer">Bonjour' . " " . $_SESSION['utilisateur']->getNom() . '</div>';
+                echo '<div><a href="index.php?page=deconnection" class="deco centrer">Deconnecter</a></div>';
+            } else {
+                echo '<a href="index.php?page=connection" class="texteColore centrer">Connexion</a>';
+            }
+
+            ?>
 
 
-    </div>
-    <div class="mini center">
-            <div class="mini"></div>
+        </div>
+        <div class="test center">
+        <div class="espaceMenu"></div>
+            <div class="textMenu">Menu</div>
             <!-- Icone de présence de menu -->
             <div>
                 <i class="fas fa-bars fa-3x"></i>
             </div>
+            <div class="espaceMenu"></div>
+            <img src="./IMG/FR.png" alt="" />
+              <div class="espacePetit"></div>
+              <div  class="textMenu">Livraison offerte dès 49 €</div>
+
+            <div class="espaceMenu"></div>
+            <img src="./IMG/FR.png" alt="" />
+            <div class="espacePetit"></div>
+            <div  class="textMenu">Retour gratuit sous 30 jours</div>
+
+            <div class="espaceMenu"></div>
+            <img src="./IMG/FR.png" alt="" />
+              <div class="espacePetit"></div>
+              <div  class="textMenu">Plus de 8.000 articles</div>
         </div>
-    
-        <div class="mini"></div>
+    </div>
+ 
     </div>
 </header>
