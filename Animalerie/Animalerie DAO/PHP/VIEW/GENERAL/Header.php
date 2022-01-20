@@ -36,17 +36,17 @@
                 <i class="fas fa-bars fa-3x"></i>
             </div>
             <div class="espaceMenu"></div>
-            <img src="./IMG/FR.png" alt="" />
+            <img src="./IMG/camion.png" alt="" />
               <div class="espacePetit"></div>
               <div  class="textMenu">Livraison offerte dès 49 €</div>
 
             <div class="espaceMenu"></div>
-            <img src="./IMG/FR.png" alt="" />
+            <img src="./IMG/carton.png" alt="" />
             <div class="espacePetit"></div>
             <div  class="textMenu">Retour gratuit sous 30 jours</div>
 
             <div class="espaceMenu"></div>
-            <img src="./IMG/FR.png" alt="" />
+            <img src="./IMG/sac.png" alt="" />
               <div class="espacePetit"></div>
               <div  class="textMenu">Plus de 8.000 articles</div>
         </div>
