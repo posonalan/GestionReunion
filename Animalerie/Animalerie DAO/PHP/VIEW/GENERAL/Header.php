@@ -3,11 +3,12 @@
     <div class="haut">
         <div class="hautPartie0">
         <div class="espace"></div>
-            <img src="./IMG/France.png" alt="" /> 
+     
+     <a href="http://planeteanimal.com"><img src="./IMG/France.png" alt=""/></a>
             <div class="espace"></div>
             <div class="espace"></div>
-           
-            <img src="./IMG/anglais.jpg" alt="" />
+            <a href="https://support.wwf.org.uk/adopt-an-animal"><img src="./IMG/anglais.jpg" alt=""/></a>   
+    
         </div>
         
         <div class="hautPartie1">
