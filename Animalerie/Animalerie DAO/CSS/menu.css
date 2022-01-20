@@ -66,17 +66,19 @@ li a:hover {
 
 /**************** Nav *****************/
 .menuHamburger {
-    background-color: var(--color);
+    background-color: rgb(156, 182, 156);
     position: absolute;
-    width: 20vw;
+    width: 50vw;
     z-index: 30;
     outline: 2px solid black;
     display: none;
     padding-bottom: 2vh;
+
 }
 
 .block {
     display: block;
+    
 }
 
 .menuItem, .childMenuItem {
