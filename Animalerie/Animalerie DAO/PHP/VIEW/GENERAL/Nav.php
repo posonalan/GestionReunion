@@ -1,4 +1,5 @@
  <nav >
+<nav >
         <div class="mini"><i class="fas fa-bars fa-2x"></i></div>
        Bloc affiché quand on clique sur l'icone
        <div class="menuHamburger block">
@@ -47,6 +48,7 @@
     </nav> 
 
      
+    
 
      <!-- <nav>
                     <ul>
