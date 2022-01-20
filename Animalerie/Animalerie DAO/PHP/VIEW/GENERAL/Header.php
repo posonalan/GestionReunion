@@ -22,11 +22,11 @@
         <div class="hautPartie1"><img src="./IMG/chien.png" alt="" /></div>
          <div class="hautPartie0">
         <div class="espace"></div>
-     
+<!--      
      <a href="http://planeteanimal.com"><img src="./IMG/France.png" alt=""/></a>
             <div class="espace"></div>
             <div class="espace"></div>
-            <a href="https://support.wwf.org.uk/adopt-an-animal"><img src="./IMG/anglais.jpg" alt=""/></a>   
+            <a href="https://support.wwf.org.uk/adopt-an-animal"><img src="./IMG/anglais.jpg" alt=""/></a>    -->
     
         </div>
         

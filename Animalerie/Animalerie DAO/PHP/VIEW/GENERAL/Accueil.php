@@ -45,13 +45,67 @@
         <div class="espaceVAcc"></div>
         <div class="bas">
             <div class="partieAcc">
-                <img src="./IMG/croquette.png" alt="" />
+                <img src="./IMG/images.jfif" alt="" />
                 <div class="textAcc">
-                    <h3>Croquette</h3>
+                    <h3>Croquette Chevreuil</h3>
                     <div class="descAcc">
                         Croquette riche en nutriment et covid 19 , ideal pour Animaux a poils ( exepter les hommes )
                     </div>
-                    <div class="prix">23,99€</div>
+                    <div class="prix">29,99€</div>
+
+                    <button class="boutAcc">Ajouter</button>
+                        
+                     
+                </div>
+            </div>
+
+           
+
+            <div class="partieAcc">
+                <img src="./IMG/foto1.jfif" alt="" />
+                <div class="textAcc">
+                    <h3>Croquette Poulet</h3>
+                    <div class="descAcc">
+                        Croquette riche en nutriment et covid 19 , ideal pour Animaux a poils ( exepter les hommes )
+                    </div>
+                    <div class="prix">28,99€</div>
+                    <button class="boutAcc">Ajouter</button>
+                </div>
+            </div>
+
+
+            <div class="partieAcc">
+                <img src="./IMG/foto2.jfif" alt="" />
+                <div class="textAcc">
+                    <h3>Croquette Saumon</h3>
+                    <div class="descAcc">
+                        Croquette riche en nutriment et covid 19 , ideal pour Animaux a poils ( exepter les hommes )
+                    </div>
+                    <div class="prix">43,99€</div>
+                    <button class="boutAcc">Ajouter</button>
+                </div>
+            </div>
+
+            <div class="partieAcc">
+                <img src="./IMG/foto7.jfif" alt="" />
+                <div class="textAcc">
+                    <h3>Croquette agneau</h3>
+                    <div class="descAcc">
+                        Croquette riche en nutriment et covid 19 , ideal pour Animaux a poils ( exepter les hommes )
+                    </div>
+                    <div class="prix">32,99€</div>
+                    <button class="boutAcc">Ajouter</button>
+                </div>
+            </div>
+
+            <div class="partieAcc">
+                <img src="./IMG/foto4.jfif" alt="" />
+                <div class="textAcc">
+                    <h3>Croquette Legume</h3>
+                    <div class="descAcc">
+                        Croquette riche en nutriment et covid 19 , ideal pour Animaux a poils ( exepter les hommes )
+                    </div>
+                    <div class="prix">37,99€</div>
                     <button class="boutAcc">Ajouter</button>
                 </div>
             </div>
@@ -59,60 +113,9 @@
 
 
             <div class="partieAcc">
-                <img src="./IMG/croquette.png" alt="" />
+                <img src="./IMG/foto5.jfif" alt="" />
                 <div class="textAcc">
-                    <h3>Croquette</h3>
-                    <div class="descAcc">
-                        Croquette riche en nutriment et covid 19 , ideal pour Animaux a poils ( exepter les hommes )
-                    </div>
-                    <div class="prix">23,99€</div>
-                    <button class="boutAcc">Ajouter</button>
-                </div>
-            </div>
-
-
-            <div class="partieAcc">
-                <img src="./IMG/croquette.png" alt="" />
-                <div class="textAcc">
-                    <h3>Croquette</h3>
-                    <div class="descAcc">
-                        Croquette riche en nutriment et covid 19 , ideal pour Animaux a poils ( exepter les hommes )
-                    </div>
-                    <div class="prix">23,99€</div>
-                    <button class="boutAcc">Ajouter</button>
-                </div>
-            </div>
-
-            <div class="partieAcc">
-                <img src="./IMG/croquette.png" alt="" />
-                <div class="textAcc">
-                    <h3>Croquette</h3>
-                    <div class="descAcc">
-                        Croquette riche en nutriment et covid 19 , ideal pour Animaux a poils ( exepter les hommes )
-                    </div>
-                    <div class="prix">23,99€</div>
-                    <button class="boutAcc">Ajouter</button>
-                </div>
-            </div>
-
-            <div class="partieAcc">
-                <img src="./IMG/croquette.png" alt="" />
-                <div class="textAcc">
-                    <h3>Croquette</h3>
-                    <div class="descAcc">
-                        Croquette riche en nutriment et covid 19 , ideal pour Animaux a poils ( exepter les hommes )
-                    </div>
-                    <div class="prix">23,99€</div>
-                    <button class="boutAcc">Ajouter</button>
-                </div>
-            </div>
-
-
-
-            <div class="partieAcc">
-                <img src="./IMG/croquette.png" alt="" />
-                <div class="textAcc">
-                    <h3>Croquette</h3>
+                    <h3>Croquette Dinde</h3>
                     <div class="descAcc">
                         Croquette riche en nutriment et covid 19 , ideal pour Animaux a poils ( exepter les hommes )
                     </div>

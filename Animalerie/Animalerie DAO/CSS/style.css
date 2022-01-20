@@ -403,11 +403,11 @@ body {
   }
 
 .partieAcc img {
-	height: 10vh;
-	width: 10vw;
-	margin-top: 10%;
-	background-size: cover;
-	align-self: center;
+	/* height: 20vh; */
+    width: 18vw;
+    margin-top: 10%;
+    background-size: cover;
+    align-self: center;
 
 }
 
