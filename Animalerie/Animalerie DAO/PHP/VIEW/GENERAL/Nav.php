@@ -1,4 +1,4 @@
-<!-- <nav >
+<nav >
         <div class="mini"><i class="fas fa-bars fa-2x"></i></div>
        Bloc affiché quand on clique sur l'icone
        <div class="menuHamburger block">
@@ -46,9 +46,9 @@
         <div class="mini"></div>
     </nav> 
 
-     -->
+    
 
-     <nav>
+     <!-- <nav>
                     <ul>
                         <li><a href="index.php?page=accueil"> Accueil </a></li>
                         <li class="deroulant"><a href="#"> Listes </a>
@@ -70,4 +70,4 @@
                     
                     
                       </ul>
-                </nav>
+                </nav> -->
