@@ -26,7 +26,22 @@
         <div class="espaceVAcc"></div>
 
         <div class="partieAcc">
-            <div class="imageAcc"><img src="./IMG/croquette.png" alt="" /></div>
+            <div></div>
+            <div class="imageAcc"><img src="./IMG/images.jfif" alt="" />
+            
+            <h3>Croquette</h3>
+                <div class="descAcc">
+                    Croquette riche en nutriment et covid 19 , ideal pour Animaux a poils ( exepter les hommes )    
+                </div>
+                <div class="prix">23,99€</div>
+                 <button class="boutAcc">Ajouter</button>
+            </div>
+      
+
+        <div class="espaceVAcc"></div>
+
+        <div class="partieAcc">
+            <div class="imageAcc"><img src="./IMG/images(2).jfif" alt="" /></div>
             <div class="textAcc">
                 <h3>Croquette</h3>
                 <div class="descAcc">
@@ -40,21 +55,7 @@
         <div class="espaceVAcc"></div>
 
         <div class="partieAcc">
-            <div class="imageAcc"><img src="./IMG/croquette.png" alt="" /></div>
-            <div class="textAcc">
-                <h3>Croquette</h3>
-                <div class="descAcc">
-                    Croquette riche en nutriment et covid 19 , ideal pour Animaux a poils ( exepter les hommes )    
-                </div>
-                <div class="prix">23,99€</div>
-                 <button class="boutAcc">Ajouter</button>
-            </div>
-        </div>
-
-        <div class="espaceVAcc"></div>
-
-        <div class="partieAcc">
-            <div class="imageAcc"><img src="./IMG/croquette.png" alt="" /></div>
+            <div class="imageAcc"><img src="./IMG/images(3).jfif" alt="" /></div>
             <div class="textAcc">
                 <h3>Croquette</h3>
                 <div class="descAcc">
