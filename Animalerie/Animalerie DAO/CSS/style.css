@@ -161,6 +161,7 @@ font-size: 0.6em;
 	width: 50vw;
 	align-self: center;
 	background: linear-gradient( #286b1c,#dbd7d7,#dbd7d7,#dbd7d7, #286b1c);
+	min-width: 70vw;
 
 
 	padding: 5em;

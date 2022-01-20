@@ -15,7 +15,7 @@ $liste = AnimauxManager::getList();
     <div class="crudColonne">DateDeNaissance</div>
     <div class="crudColonne">LibelleAliment</div>
     <div class="crudColonne">LibelleMilieuVie</div>
-    <div class="crudColonne">SituationGeographique</div>
+    <div class="crudColonne">SituationGeo</div>
 
         <div></div> 
         <div></div> 
