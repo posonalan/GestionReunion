@@ -16,13 +16,32 @@
     <div class="marge"></div>
     <div class="margeColonne">
 
-        <div class="textmarge">ici </div>
+        <div class="textmarge">Animal'N'Co </div>
         <img src="./IMG/test.gif" alt="" />
     </div>
     <div class="marge"></div>
 
     <div class="contenuCentre">
 
+    <div id="slider">
+
+<div id="slides">
+
+    <figure id="slide1">
+        <img src="./IMG/slide1.jpg" alt="Une première image">
+        <figcaption>Code Bienvenue</figcaption>
+    </figure>
+    <figure id="slide2">
+        <img src="./IMG/slide2.jpg" alt="Une deuxième image">
+        <figcaption>Tu aime les calins ? </figcaption>
+    </figure>
+    <figure id="slide3">
+        <img src="./IMG/slide3.jpg" alt="Une troisième image">
+        <figcaption>Nouveauté : Conseil nutrition</figcaption>
+    </figure>
+</div>
+
+</div>
         <div class="espaceVAcc"></div>
 
         <div class="partieAcc">
@@ -72,7 +91,7 @@
     </div>
     <div class="marge"></div>
     <div class="margeColonne">
-        <div class="textmarge">ici </div>
+    <div class="textmarge">Animal'N'Co </div>
         <img src="./IMG/bd.jpg" alt="" />
     </div>
     <div class="marge"></div>

@@ -41,7 +41,7 @@
         </div>
         <div class="test center">
         <div class="espaceMenu"></div>
-            <div class="textMenu">Menu</div>
+           
             <!-- Icone de présence de menu -->
             <div>
                 <i class="fas fa-bars fa-3x"></i>
